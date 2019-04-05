@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Plantilla para Memorias y Tesis, UTFSM, Chile
+%	=============================================
+%
+% Autor:
+%       Jaime C. Rubin-de-Celis <jaime@rubin-de-celis.com>
+%
+% Fecha:	
+%       $Date: 2017-10-28 11:25:21 -0300 (Sat, 28 Oct 2017) $
+%
+% Versión:
+%       1.1
+%
+% Licencia:
+%       Copyright (c) 2012-2017, Jaime C. Rubin-de-Celis
+%       The MIT License
+%
+% Nota:
+%       Las imágenes son propiedad intelectual de la UTFSM.
+%
+% Uso:
+%       Ver archivo adjunto README.md.
+%       Si todo lo demás falla, recuerde "RTFM".
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[
+	12pt,			% Tamaño de fuente (11pt)
+	letterpaper,	% Tamaño del papel (carta)
+	oneside,		% Doble Cara
+]{thesis_utfsm}
+
+\usepackage{thesis_utfsm}   % Archivo de estilos 
+
+\input{config}              % Configuración (Título, autor, etc.)
+                            % Usted debe modificar este documento
+                            % para actualizar la portada.
+
+\makeatother                % Important! (Do not delete or move!)
+
+
+% Generadores de texto aleatorio (se pueden eliminar)
+\usepackage{blindtext}      % automated text generation
+\usepackage{lipsum}         % automated text generation
+
+
+%---------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Documento
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\pagestyle{plain}           % Headers & Footers (Roman numbers)
+
+%---------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Portada
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\insertFile{portada}        % Insertar archivo 'sections/portada.tex'.
+
+%---------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Preámbulo (Front Matter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter                % Important! (Do not delete or move!)
+
+
+\insertFile[plain]{resumen}     % Insertar 'sections/resumen.tex'.
+
+%%% TABLA DE CONTENIDOS / FIGURAS / CUADROS
+\begin{spacing}{1}      % Single space for TOC, LOF and LOT
+    \tableofcontents\listoftables\listoffigures
+\end{spacing}
+
+
+
+%---------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Cuerpo Principal (Main Matter)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter             % Important! (Do not delete or move!)
+
+\pagestyle{fancy}       % Headers & Footers (Arabic numbers)
+
+% Incluir Capítulos
+\input{includes/Capitulo01}
+\input{includes/Capitulo02}
+\input{includes/Capitulo03}
+\input{includes/Capitulo04}
+\input{includes/Capitulo05}
+\input{includes/Capitulo06}
+\input{includes/Capitulo07}
+%...                    % Agregar aquí más capítulos
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Bibliografía
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{spacing}{1}      % Single space for Bibliography
+    %\bibliographystyle{thesis_utfsm}    % Alternative 'apalike'
+    \bibliography{bibliography}         % Archivo 'bibliography.bib'
+\end{spacing}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Anexos (Opcional)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\input{includes/Anexo}
+%...                  % Agregar más apéndices
+
+
+\end{document}

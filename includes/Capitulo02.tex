@@ -1,0 +1,468 @@
+%!TEX root = ../memoria.tex
+
+\chapter{Requisitos no funcionales}
+
+Se hace menester comenzar el plan de calidad definiendo los “atributos de calidad”, los indicadores de medición y los valores de validación de estos. Lo anterior, con el fin de definir los márgenes generales en el desarrollo de la aplicación y el nivel de integración del sistema con los atributos antes mencionados.
+
+\section{Definición de atributos de calidad}
+
+A continuación, se procederá con la presentación y definición de los requisitos no funcionales que definirán el lineamiento del desarrollo de la aplicación.
+
+\begin{description}
+
+\item[Fiabilidad:]\hfill
+
+Se debe garantizar la respuesta de la aplicación ante una acción del usuario y además que la información entregada sea correcta.
+
+\item[Usabilidad:]\hfill
+
+Facilidad en el uso de la aplicación, reflejándose en la facilidad de aprender el funcionamiento del sistema y recordar este aprendizaje.
+
+\item[Multiplataforma:]\hfill
+
+Capacidad de la aplicación de funcionar en distintos entornos informáticos.
+
+\item[Temporización:]\hfill 
+
+Debe emplear el menor tiempo posible en entregar una respuesta visible al usuario ante una acción de este.
+
+\item[Soportar alta carga:]\hfill 
+
+El Sistema debe ser capaz de funcionar incluso en momentos de alto tráfico. 
+
+\item[Disponibilidad:]\hfill 
+
+El sistema debe encontrarse disponible para su acceso o consulta el mayor tiempo posible.
+
+\item[Seguridad:]\hfill 
+
+Protección de la infraestructura e información contenida en el sistema.
+
+\item[Escalabilidad:]\hfill 
+
+Capacidad del sistema de aumentar la carga de trabajo o sus funciones sin ver afectado el funcionamiento del resto de funcionalidades y tampoco disminuir su calidad.
+
+\item[Mantenibilidad:]\hfill
+
+ Esfuerzo y tiempo dedicado al soporte del sistema.
+
+\end{description}
+
+\section{Objetivos Cuantificables}
+
+En la presente sección se establecerán los indicadores de cada uno de los atributos de calidad definidos en el apartado anterior. Además, se establecen los valores mínimos y máximos de los indicadores de los atributos de calidad, con el propósito de establecer de forma objetiva el cumplimiento requisitos no funcionales deseados en el sistema.
+
+\subsection{Fiabilidad}
+
+Es necesario que la información entregada por cualquiera de los distintos módulos que forman \emph{Gerprin} sea legible por los módulos restantes y de este modo no tener perdidas en la comunicación entre distintas plataformas. Las solicitudes y respuesta deben ser verídicas y corresponder a acciones reales desencadenadas por los actores de la aplicación.
+
+Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, pese a lo anterior se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
+
+Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \emph{API} del sistema al momento de realizar activación o desactivación del sistema cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el sistema \emph{GPS} envía la posición. Por este motivo el envío de la posición se realiza mediante protocolo \emph{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \emph{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
+
+Por otro lado, la aplicación móvil y la \emph{API} desarrollada, si deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Funcionalidades de la aplicación móvil sin errores.
+	\item
+	Servicios entregados por la \emph{API} sin errores.
+	\item
+	Envió de posición de forma precisa e intervalos regulares sin errores.
+	\item
+	Funcionalidad de activación y desactivación de relé de forma remota sin errores.
+\end{itemize}
+
+\subsubsection{Criterios de medición.}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de fiabilidad.] {Validación para los indicadores de fiabilidad.}
+    \label{tbl:Criterios de Validación fiabilidad}
+    \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	Funcionalidades de la aplicación móvil sin errores. & 95\% de efectividad sin errores. \\ \hline
+		Servicios entregados por la \emph{API} sin errores. & 95\% de respuestas sin errores. \\ \hline
+		Envió de posición de forma precisa e intervalos regulares sin errores. & 75\% de posiciones almacenadas con un error de ±20 metros. \\ \hline
+		Funcionalidad de activación y desactivación de relé de forma remota sin errores. & 95\% de efectividad. \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Los criterios de validacion se basan en la experiencia de aplicaciones similares. Es necesario considerar una conexión a internet estable que permita el envío y recepción de información.
+
+\subsection{Usabilidad}
+
+Es necesario para el módulo de la aplicación móvil del sistema contar con una interfaz que entregue una curva de aprendizaje empinada, es decir, que permita comprender el funcionamiento de la aplicación móvil en un corto periodo de tiempo.
+
+Para esto es necesario que la interfaz aplique colores y símbolos coherentes con las acciones a realizar o información que muestra, Información ordenada y fácil de entender.
+
+Debido a que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
+
+Considerando que el primer \emph{iPhone} contaba con un tamaño de pantalla de 3,5 pulgadas y que estas van en aumento, se considerará esta como el tamaño mínimo de pantalla.
+
+Respecto a la resolución mínima de pantalla, se puede apreciar en el gráfico \ref{chart:Screen Resolution} que aproximadamente el 74\% de los usuarios de dispositivos móviles en chile emplean una resolución mayor a 360 x 640 píxeles.
+
+\begin{figure}[H]
+	\centering
+	\caption[Screen Resolution, Market Share in Chile Sept 2017 - Sept 2018.]{Screen Resolution, Market Share in Chile Sept 2017 - Sept 2018 \\ http://gs.statcounter.com/screen-resolution-stats/mobile-tablet/chile/\#monthly-201709-201809-bar.}
+	\begin{bchart}[step=10, max=100, width=.8\textwidth, unit=\%]
+		\bcbar[label=360x640]{55.13}
+		\bcbar[label=375x667]{6.68}
+		\bcbar[label=320x534]{5.67}
+		\bcbar[label=320x568]{4.83}
+		\bcbar[label=320x570]{3.74}
+		\bcbar[label=640x360]{2.09}
+		\bcbar[label=768x1024]{1.79}
+		\bcbar[label=414x736]{1.54}
+		\bcbar[label=412x732]{1.37}
+		\bcbar[label=360x740]{0.88}
+		\bcbar[label=720x1280]{0.85}
+		\bcbar[label=320x480]{0.76}
+		\bcbar[label=360x720]{0.73}
+		\bcbar[label=480x800]{0.71}
+		\bcbar[label=600x1024]{0.64}
+		\bcbar[label=412x846]{0.63}
+		\bcbar[label=424x753]{0.6}
+		\bcbar[label=480x854]{0.6}
+		\bcbar[label=320x569]{0.56}
+		\bcbar[label=1024x600]{0.5}
+		\bcbar[label=Other]{9.7}
+	\end{bchart}
+	\label{chart:Screen Resolution}
+\end{figure}
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Dimensiones de la página adaptables a los tamaños de pantalla de los dispositivos.
+	\item
+	Dimensiones de la página adaptables distintas resoluciones.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de usabilidad.] {Validación para los indicadores de usabilidad.}
+    \label{tbl:Criterios de Validación usabilidad}
+    \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	Tamaño pantalla mínimo. & 3,5 pulgadas. \\ \hline
+		Resolución mínima.  & 360x640 pixeles. \\ 
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Multiplataforma}
+
+Debido a la existencia de distintas plataformas móviles, es necesario asegurar un correcto funcionamiento con los sistemas operativos más comunes de estas. A continuación, se puede observar en la gráfica \ref{chart:OS} el detalle en porcentajes del mercado que poseen los sistemas operativos más populares del último año.
+
+\begin{figure}[H]
+	\centering
+	\caption[OS, Market Share in Chile Sept 2017 - Sept 2018.]{OS, Market Share in Chile Sept 2017 - Sept 2018 \\ http://gs.statcounter.com/os-market-share/mobile-tablet/chile/\#monthly-201709-201809-bar.}
+	\label{chart:OS}
+	\begin{bchart}[step=10, max=100, width=.8\textwidth, unit=\%]
+		\bcbar[label=Android]{81.72}
+		\bcbar[label=iOS]{17.55}
+		\bcbar[label=Samsung]{0.39}
+		\bcbar[label=Windows]{0.2}
+		\bcbar[label=Unknown]{0.03}
+		\bcbar[label=Playstation]{0.02}
+		\bcbar[label=BlackBerry OS]{0.02}
+		\bcbar[label=Series 40]{0.01}
+		\bcbar[label=Linux]{0.01}
+		\bcbar[label=Other]{0.03}
+	\end{bchart}
+\end{figure}
+
+Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \emph{Android} e \emph{iOS}, que en conjunto corresponden al 95,26\% del mercado. Debido al amplio segmento que abarcan estos dos sistemas, el desarrollo de \emph{Gerprin} se centrara en dichas plataformas.
+
+Para el caso de \emph{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
+
+\begin{figure}[H]
+	\centering
+	\caption[Android Version, Market Share in Chile Sept 2017 - Sept 2018.]{Android Version, Market Share in Chile Sept 2017 - Sept 2018 \\ http://gs.statcounter.com/android-version-market-share/mobile-tablet/chile/\#monthly-201709-201809-bar.}
+	\label{chart:Android Version}
+	\begin{bchart}[step=10, max=100, width=.7\textwidth, unit=\%]
+		\bcbar[label=6.0 Marshmallow]{34.81}
+		\bcbar[label=7.0 Nougat]{23.58}
+		\bcbar[label=5.1 Lollipop]{17.11}
+		\bcbar[label=4.4 KitKat]{10}
+		\bcbar[label=5.0 Lollipop]{4.44}
+		\bcbar[label=7.1 Nougat]{3.58}
+		\bcbar[label=8.0 Oreo]{2.75}
+		\bcbar[label=4.2 Jelly Bean]{1.88}
+		\bcbar[label=4.1 Jelly Bean]{0.61}
+		\bcbar[label=8.1 Oreo]{0.4}
+		\bcbar[label=4.0 Ice Cream Sandwich]{0.32}
+		\bcbar[label=4.3 Jelly Bean]{0.27}
+		\bcbar[label=2.3 Gingerbread]{0.22}
+		\bcbar[label=2.2 Froyo]{0.02}
+		\bcbar[label=Other]{0.01}
+	\end{bchart}
+\end{figure}
+
+Si bien, corresponde a un segmento importante el uso de \emph{Android KitKat} (10\%) es desde la versión de la \emph{API} de \emph{Android} 21 que se integra nativamente \emph{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considera el desarrollo enfocado en sistemas \emph{Android} 5.0 o mayores.
+
+Por otro lado, las versiones de \emph{iOS} y el porcentaje de su participación en el mercado se muestran en el gráfico \ref{chart:iOS Version}.
+
+\begin{figure}[H]
+	\centering
+	\caption[iOS Version, Market Share in Chile Sept 2017 - Sept 2018.]{iOS Version, Market Share in Chile Sept 2017 - Sept 2018 \\ http://gs.statcounter.com/ios-version-market-share/mobile-tablet/chile/\#monthly-201709-201809-bar.}
+	\label{chart:iOS Version}
+	\begin{bchart}[step=10, max=100, width=.8\textwidth, unit=\%]
+		\bcbar[label=iOS 11.2]{22.93}
+		\bcbar[label=iOS 10.3]{19.55}
+		\bcbar[label=iOS 11.4]{15.31}
+		\bcbar[label=iOS 11.3]{10.19}
+		\bcbar[label=iOS 11.0]{9.42}
+		\bcbar[label=iOS 11.1]{8.11}
+		\bcbar[label=iOS 9.3]{5.39}
+		\bcbar[label=iOS 10.2]{3.31}
+		\bcbar[label=iOS 7.1]{1.55}
+		\bcbar[label=iOS 10.1]{0.83}
+		\bcbar[label=iOS 10.0]{0.72}
+		\bcbar[label=iOS 12.0]{0.48}
+		\bcbar[label=iOS 9.2]{0.34}
+		\bcbar[label=Other]{1.87}
+	\end{bchart}
+\end{figure}
+
+En base al porcentaje de uso de las distintas versiones de \emph{iOS} del gráfico \ref{chart:iOS Version}, se considera un desarrollo para la versión 10.2 o superiores.
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Correcta ejecución en una versión minima de \emph{Android}.
+	\item
+	Correcta ejecución en una versión minima de \emph{iOS}.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de multiplataforma.] {Validación para los indicadores de multiplataforma.}
+    \label{tbl:Criterios de Validación multiplataforma}
+    \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	versión \emph{Android}. & 5.0 o superior. \\ \hline
+		versión \emph{iOS}.  & 10.2 o superiores. \\ 
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Temporización}
+
+Se considera la velocidad de conexión del sistema a bordo de 9,6 kbps correspondiente a tecnología \emph{GSM} y una de hasta 2 mbps para una red \emph{3G} para la aplicación móvil, como la velocidad necesaria para un óptimo funcionamiento del sistema.
+
+Debido a que \emph{Gerprin} es una aplicación basada en servicios, es necesario que estos tengan una baja taza de espera al consultar al módulo que contiene la \emph{API}.
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Rápida carga de plantillas.
+	\item
+	Rápida Respuesta de los servicios.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de temporización.] {Validación para los indicadores de temporización.}
+    \label{tbl:Criterios de Validación temporización}
+    \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	Tiempo de respuesta.  & inferior a 3 segundos. \\ \hline
+		Compresión \emph{gzip}   & Si \\ 
+        \hline
+    \end{tabular}
+\end{table}
+Los criterios de validación se basan en la experiencia de aplicaciones similares.
+
+\subsection{Soportar alta carga}
+
+Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \emph{API} es de suma importancia que cuente con el soporte necesario para responder una gran cantidad de solicitudes en un corto periodo de tiempo.
+
+Mediante herramientas como la consola de \emph{Google Play} o \emph{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, numero de terminales con la aplicación instalada, entre otros factores.
+
+Esta información se emplea para calcular el promedio de usuarios conectados y se considera que cada uno de ellos realiza una consulta al servidor cada 2 segundos.
+
+Es importante considerar que el numero de usuarios es variable dependiendo de la popularidad de esta. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
+
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Cantidad de solicitudes por segundo.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de soporte de alta carga.] {Validación para los indicadores de soporte de alta carga.}
+    \label{tbl:Criterios de Validación soporte de alta carga}
+    \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	Cantidad de solicitudes por segundo.  & 1 por segundo cada 2 usuarios.  \\ \hline
+    \end{tabular}
+\end{table}
+Los criterios de validación se basan en la experiencia de aplicaciones similares.
+
+\subsection{Disponibilidad}
+
+Debido a la importancia de la aplicación es completamente necesario que esta se encuentre disponible el mayor tiempo posible.
+
+Los usuarios deben tener plena confianza en que la plataforma se encuentra disponible y enviara las notificaciones \emph{push} si el sistema detecta un intento de robo, ya sea un intento de encender el vehículo por un usuario no autorizado o este se desplazó sin autorización.
+
+Además, debe estar disponible en casos de emergencia que se necesite desactivar el cortacorriente de forma remota sin una huella digital, esto para casos de emergencia.
+
+Es deseable, además, que la aplicación se encuentre offline por periodos no mayores a 4 horas en caso de presentar algún problema.
+
+Basado en criterios de experiencias en el desarrollo de aplicaciones similares, es necesario que esta no presente un tiempo offline mayor a la suma de 12 horas mensuales y no puede ser en intervalos mayores a 4 horas desde reportado el problema.
+
+\subsubsection{Clúster de servidores}
+
+La aplicación debe encontrarse en un \emph{Cluster} de servidores, es decir, debe encontrarse en varios computadores respondiendo las solicitudes como uno solo. Esto con el objeto de dividir la carga de procesamiento de los servidores, evitar la falta de disponibilidad por fallas de hardware y permitir escalar la cantidad de carga que puede aguantar el servicio de forma rápida y fácil. Debe encontrarse en un mínimo de dos equipos con la posibilidad de aumentar dicha cantidad según la demanda.
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Tiempo online total.
+	\item
+	Máximo tiempo offline seguido.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de disponibilidad.] {Validación para los indicadores de disponibilidad.}
+    \label{tbl:Criterios de Validación disponibilidad}
+    \begin{tabular}{|p{.5\textwidth}|p{.44\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	Tiempo online total.  & 98\% del tiempo se debe encontrar online.  \\ \hline
+    	Máximo tiempo offline seguido.  & Intervalos no mayores a 4 horas.  \\ \hline
+    \end{tabular}
+\end{table}
+Los criterios de validación se basan en la experiencia de aplicaciones similares.
+
+\subsection{Seguridad}
+
+Debido a la naturaleza del sistema y la información sensible que esta puede manejar, es necesario implementar roles para los usuarios con el propósito de establecer un acceso consistente y seguro a la información contenida en la plataforma. 
+
+Para implementar lo anterior es necesario establecer cuentas de usuarios protegidas por contraseñas que deben ser almacenadas de forma encriptada y un token o \emph{API Key} que permita realizar consultas seguras a la API del sistema.
+
+Es necesario, además, contemplar ataques de tipo \emph{SQL injection}\footnote{http://www.revistasbolivianas.org.bo/pdf/rits/n8/n8a17.pdf}  y de fuerza bruta.
+
+
+\subsubsection{Limitar puntos de acceso al servidor}
+
+Es necesario establecer la arquitectura del servidor a usar. Se empleará un servidor \emph{AWS EC2} y los puertos abiertos son: 
+\begin{itemize}
+	\item
+	Conexión SSH: puerto 22.
+	\item
+	Puerto API: 80.
+\end{itemize}
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Seguridad de sesión.
+	\item
+	Limitar puntos de acceso al servidor.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\begin{table}[H]
+    \caption[Validación para los indicadores de Seguridad.] {Validación para los indicadores de Seguridad.}
+    \label{tbl:Criterios de Validación Seguridad}
+    \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
+        \hline
+        \textbf{Criterio} &  \textbf{Medición}\\
+    	\hline
+    	\hline
+    	Máximo de intentos fallidos.	& 10.  \\ \hline
+    	Ataque fuerza bruta. & Se añade Captcha al formulario al superar máximo de intentos fallidos.  \\ \hline
+		Ataque inyección SQL. & No permitir instrucciones de base de datos en ningún formulario.  \\ \hline
+		Requisitos al crear contraseña. & Mínimo 8 caracteres con al menos un digito.  \\ \hline
+		Encriptar contraseña. & Si, empleando método blowfish.  \\ \hline
+    \end{tabular}
+\end{table}
+Los criterios de validación se basan en la experiencia de aplicaciones similares.
+
+\subsection{Escalabilidad}
+
+Es necesario que el sistema permita añadir nuevas funcionalidades, modificar las ya implementadas, o bien, aumentar la capacidad de trabajo sin afectar el rendimiento de este. 
+
+Para lograr lo anterior es necesario plantear una serie de puntos que permitan agregar o modificar funciones del sistema sin afecten a otras. 
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Encapsulamiento de los módulos.
+	\item
+	Facilitar escalabilidad de la arquitectura del servidor.
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\paragraph{Encapsulamiento de los módulos\\}
+
+Lo primero que debe ser tomado en cuenta es la creación del sistema de forma modular. Esto se logra encapsulando funciones, para que trabajen de manera privada y que solamente puedan ser llamadas por otras funciones sin modificar la forma realizan sus procesos. De este modo, se pueden modificar de forma independiente. 
+
+Para este desarrollo se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \emph{Android} y \emph{iOS}, el segundo módulo es una \emph{API} instalada en un servidor \emph{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
+
+\paragraph{Encapsulamiento de los módulos\\}
+
+Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizontal de la arquitectura del servidor. La escalabilidad vertical permite aumentar la capacidad física de almacenamiento y procesamiento aumentando las características del hardware donde se encuentra el sistema. Mientras que la horizontal permite aumentar el número de nodos que conforman el \emph{Cluster} del servidor. Para el caso de \emph{Gerprin}, \emph{AWS EC2} permite la rápida implementación de ambos métodos.
+
+\subsection{Mantenibilidad}
+
+\emph{ISO/IEC 25010}\footnote{I. S. Organization, “ISO/IEC 25010,” in Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models, ed, 2011} define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \footnote{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
+
+\subsubsection{Objetivos cuantificables}
+
+\begin{itemize}
+	\item
+	Comentarios en el código fuente.
+	\item
+	Estandarización del nombre.
+
+\end{itemize}
+
+\subsubsection{Criterios de Validación}
+
+\paragraph{Comentarios en el código fuente\\}
+
+Es necesaria la existencia de comentarios dentro del código fuente del programa. Se busca que mínimamente se encuentren comentarios de cada función y método indicando valores de entrada, salida y una descripción de las acciones que realiza. Además, se esperan comentarios explicativos de cada clase indicando el significado de sus atributos. 
+
+\paragraph{Estandarización del nombre\\}
+
+Otra buena práctica para facilitar el mantenimiento es la estandarización de nombres siguiendo la convención que existe para este propósito para \emph{PHP}\footnote{http://pear.php.net/manual/en/standards.naming.php}.

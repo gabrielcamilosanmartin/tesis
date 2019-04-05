@@ -1,0 +1,127 @@
+%!TEX root = ../memoria.tex
+
+\chapter{Pruebas}
+
+Según IEEE (2004), las pruebas de software "consisten en verificar el comportamiento de un programa dinámico a través de un grupo finito de casos de prueba, debidamente seleccionados del, típicamente, ámbito de ejecuciones infinito, en relación al comportamiento esperado".
+
+Es importante mencionar que bajo una lógica de TDD, las actividades de pruebas son realizadas a lo largo de todo el proyecto e intercaladas con el resto de las actividades de desarrollo, tomando en cuenta la calidad del software a lo largo de toda la vida del proyecto. 
+
+
+\section{Estructura de las pruebas}
+
+Para la implementación y creación de las pruebas se deben seguir una serie de etapas que garantizan que estas tengan éxito al encontrar los posibles errores en el sistema. A continuación, se detallan las etapas del proceso de prueba del sistema.
+
+\subsection{Planificación}
+
+Esta etapa debe comenzar junto con la planificación del proyecto. Los detalles del plan de pruebas deben ser desarrollados después de la aprobación de la especificación de requerimientos.
+
+En esta etapa se deben definir todos los elementos necesarios para posteriormente llevar acabo las pruebas, esto implica definir los niveles, tipos, metodologías, requerimientos, valores de aprobación y rechazo, recursos materiales y humano, además de responsables del proceso de pruebas.
+
+Las pruebas que serán realizadas deben encontrarse trazadas con los requerimientos previamente aprobados, esto con el fin de asegurar el cumplimiento de todo lo establecido en la toma de requerimientos.
+
+Una vez el documento con el plan de pruebas se encuentre terminado debe ser sometido a revisión y corregido para resolver discrepancias con el plan de proyecto, considerando los plazos y recomendaciones.
+
+\subsection{Especificación}
+
+Basado en el plan de pruebas desarrollado en la etapa anterior se debe describir con mayor rigor cada uno de los test que se realizaran identificando el propósito, los métodos y contenidos de las entradas y salidas.
+
+Es importante detallar con exactitud los métodos y contenido de \emph{input} y \emph{output} del sistema, describiendo los tipos y volúmenes de datos; rangos de capacidad y tiempos de respuesta; métodos que serán utilizados para ingresar y recibir la información; y la traza con los requerimientos para aprobar o rechazar una funcionalidad específica del sistema.
+
+Junto a lo anterior, es necesario definir los métodos y herramientas que deben utilizarse y describir el proceso de análisis de los resultados.
+Considerando que en este punto el sistema se encuentra en una etapa temprana de desarrollo, los niveles de prueba deben ser descritos en el siguiente orden: sistema, aceptación, integración, unitarias y usabilidad.
+
+Al igual que en la etapa anterior, el documento debe ser revisado, corregido de ser necesario y aprobado. 
+Las pruebas de sistema realizan una comparación entre los objetivos originales del sistema, aquellos planteados en la toma de requisitos, y los procesos, actividades y rutinas del sistema desarrollado.
+
+\subsection{Ejecución}
+
+Basado en la especificación de las pruebas descritas en la etapa anterior, se debe realizar la ejecución de cada uno de los test, registrando los resultados y estableciendo, para cada prueba, el éxito o fracaso en base a los criterios ya definidos. 
+
+En caso de que el sistema no apruebe alguna de las pruebas, el equipo de desarrollo debe encargarse de realizar las correcciones necesarias y posteriormente se debe comprobar la correctitud del sistema completo. 
+Una vez el sistema apruebe todas las pruebas, se debe seguir con la siguiente actividad definida en el plan de pruebas. 
+
+Las pruebas se deben realizar en el siguiente orden.
+
+\begin{itemize}
+	\item
+		\textbf{Pruebas unitarias:} En paralelo a la etapa de codificación.
+	\item
+		\textbf{Pruebas de integración:} En paralelo a la etapa de integración.
+	\item
+		\textbf{Pruebas de aceptación:} Antes de la etapa de aceptación y entrega.
+	\item 
+		\textbf{Pruebas del sistema:} Previo a la entrega del sistema.
+\end{itemize}
+
+Únicamente las pruebas unitarias son responsabilidad del equipo de desarrollo, el resto debe ser realizadas por un equipo distinto, responsable de estas.
+
+\subsection{Análisis de resultados}
+
+Basado en los resultados obtenidos, se debe realizar un análisis que permita identificar los defectos y sus posibles causas, lo anterior con el objetivo de establecer acciones correctivas y evitar propagación y repetición de errores.
+
+Es importante recalcar que no se deben buscar responsabilidades individuales, únicamente asociar el fallo con un proceso en el desarrollo.
+
+\subsection{Completación}
+
+Para dar conclusión al proceso de prueba, la unidad responsable debe preparar los elementos necesarios para su posterior uso y realizar la documentación del proceso realizado.
+
+\section{Pruebas sobre el sistema \emph{Gerprin}}
+
+A continuación, se describen los tipos de pruebas que deben ser realizadas sobre el sistema \emph{Gerprin}. 
+
+\subsection{Pruebas unitarias}
+
+Las pruebas unitarias tienen como objetivo asegurar que cada una de las funciones codificadas para el sistema realicen de forma correcta el proceso para el cual fueron creadas. Este tipo de pruebas se realiza bajo la lógica de “caja negra”, donde se analiza que, en base a las entradas de información, se generen los resultados correctos.
+
+Si bien las pruebas unitarias son responsabilidad del equipo de desarrollo, la instancia final de estas debe ser realizadas por personas distintas a quienes se encargaron de codificar la función que debe ser probada.
+
+ Basado en la metodología TDD, descrita con anterioridad, el tipo de pruebas descritas en esta sección deben ser realizadas en paralelo al proceso de codificación y marcan el fin de cada una de las iteraciones de esta etapa al ser aprobadas. 
+
+\subsubsection{Herramientas}
+
+La gran mayoría de \emph{framwork} permiten la automatización de pruebas unitarias para agilizar el proceso y reducir errores humanos. Adicionalmente, software como \emph{Postman} o \emph{SoapUI} permiten hacer consultas mediante \emph{SOAP} o \emph{REST} de forma automática, convirtiéndose en herramientas muy útiles en esta etapa de pruebas.
+
+\subsubsection{Documentación}
+
+Las pruebas unitarias, al igual que el resto, deben ser correctamente documentadas, tanto su planificación como los resultados obtenidos. Adicionalmente, para este tipo de pruebas se debe documentar la traza con los requisitos funcionales, especificando explícitamente que a cuál requisito corresponde la función que se encuentra probando.
+
+Las plantillas para la documentación de las pruebas unitarias se encuentran en anexos.
+
+\subsection{Pruebas de integración}
+
+Las pruebas de integración aseguran el correcto funcionamiento entre dos o más unidades del sistema, para \emph{Gerprin} es clave el acoplamiento entre los distintos módulos que lo componen.
+
+La integración entre las unidades es dependiente del ambiente en el cual se encuentre el sistema, por lo que se debe montar un entorno de preproducción, también conocido como ambiente de \emph{staging} o de \emph{QA}. Este ambiente debe tener las mismas características que producción para evitar futuros problemas de compatibilidad.
+
+Este tipo de pruebas son realizadas por el área de QA, encargada de realizar las pruebas y documentarlas. Por su parte, el equipo de desarrollo se debe encargar de entregar las instrucciones necesarias para levantar el servicio en \emph{staging} y dar el soporte de ser necesario.
+
+\subsubsection{Herramientas}
+
+Para la creación de un entorno de pruebas es altamente recomendable emplear \emph{Vagrant} o \emph{Docker} para emular un servidor de producción, esto debido a que permiten crear maquinas virtuales o contenedores que de forma rápida pueden copiar las características de los servidores de producción.
+
+\subsubsection{Documentación}
+
+Respecto a la documentación de las pruebas de integración es necesario identificar las unidades que se pondrán a prueba.
+
+Las plantillas para la documentación de las pruebas de integración se encuentran en anexos.
+
+\subsection{Pruebas de aceptación}
+
+En esta etapa se realizan las últimas pruebas de funcionalidad, Estas son realizadas por el cliente y tiene como objetivo validar que se cumplan lo pactado al comenzar el desarrollo. Estas pruebas se realizan bajo la lógica de “caja negra”, debido a que no es relevante el funcionamiento interno de la aplicación para los usuarios finales. 
+
+Las pruebas se realizan sobre ambiente de producción y son realizadas de forma manual. 
+
+
+\subsubsection{Documentación}
+
+Las plantillas para la documentación de las pruebas de integración se encuentran en anexos.
+
+\subsection{Pruebas de sistema}
+
+Las pruebas de sistema tienen como fin validar que el programa cumpla objetivos establecidos inicialmente. En este tipo de pruebas no se busca validar funcionalidades, busca demostrar que el programa no resuelve los objetivos o requerimientos iniciales.
+
+Debido a la naturaleza de las pruebas de sistema, es necesario la documentación de los requerimientos iniciales para establecer los objetivos que se deben cumplir.
+
+\subsubsection{Documentación}
+
+Las plantillas para la documentación de las pruebas de integración se encuentran en anexos.

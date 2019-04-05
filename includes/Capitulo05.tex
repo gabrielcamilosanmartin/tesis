@@ -1,0 +1,593 @@
+%!TEX root = ../memoria.tex
+
+\chapter{Herramientas, técnicas y metodologías}
+
+En el presente capitulo se identifican técnicas y herramientas que serán implementadas por el equipo de SQA para un aseguramiento de calidad eficiente y efectivo.
+
+Para actividades de IT existen muchas herramientas y técnicas que permiten disminuir la cantidad de errores y facilitan la correcta ejecución de distintas actividades del desarrollo del software. A continuación, se procederá a indicar actividades que garanticen el progreso de la labor de SQA hacia un cumplimiento de los objetivos de este.
+
+\section{Técnicas}
+
+Una de las técnicas principales a emplear en el desarrollo del software corresponde a TDD, que fue descrita anteriormente (3.1). Esta técnica no solo permite reducir los errores de cada release, también permite una detección temprana de estos.
+
+\section{Herramientas}
+
+Serán empleadas distintas herramientas para las actividades de SQA a continuación se detallan estas y el objetivo de su uso.
+
+\begin{itemize}
+	\item 
+		El canal de comunicación formar será mediante correo electrónico. Adicionalmente se empleará Discord como un canal de comunicación secundario para realizar conversaciones de carácter inmediato.
+	\item
+		Se emplearán procesadores de texto online para la documentación de resultados tales como Microsoft office 365.
+	\item
+		Para el ingreso, edición, recolección y asignación de los defectos encontrados se empleará ActiveCollab. Además, permite la creación de carta Gantt y asignación de actividades.
+	\item
+		Para la generación de test automáticos y casos de pruebas se realizará con el software SoapUI.
+	\item 
+		Para mejorar el uso de un sistema de control de versiones se empleará Git Flow, que permite estandarizar el flujo de trabajo de Git.
+\end{itemize}
+
+Finalmente se empleará como IDE de trabajo PyCharm que permite identificar de forma rápida errores comunes de programación como variables no definidas o código duplicado entre otras. 
+
+\section{Revisiones}
+
+Las revisiones son una metodología empleada en SQA, utilizada para la detección temprana de desviaciones y defectos. El objetivo de las revisiones es visibilizar el proceso de desarrollo con el fin de realizar un monitoreo a productos y procesos.
+
+SQA debe velar por la correcta realización y documentación de las revisiones. Adicionalmente es responsable por la correcta asignación, documentación y programación de las actividades que deben ser realizadas al detectar cualquier anomalía en estas.
+
+Basado en [WEB-00] se procede a describir los participantes y de forma seguida, las etapas que conforman parte del proceso de revisión. 
+
+\subsection{Roles y responsabilidades}
+
+Los actores descritos a continuación deben guiarse por el checklist de la revisión adjunto en anexos. 
+
+\subsubsection{Moderador}
+
+El moderador es el encargado de facilitar todo el proceso de revisión, debe liderar el resto del equipo, coordinar las actividades, trabajar con los jefes de proyecto de otras secciones, preparar las inspecciones coordinando al equipo de trabajo, determinar el alcance la de inspección e informar los productos de las actividades de inspección a jefes de proyecto.
+
+\subsubsection{Autor}
+
+Corresponde al autor del producto a ser inspeccionado. Debe preparar el producto para ser inspeccionado, realizar recomendaciones de personas que participen en el proceso de inspección, explicar el producto a ser inspeccionado, corregir defectos detectados y participar de las acciones correctivas posteriores.
+
+\subsubsection{Presentador}
+
+El presentador es el encargado de presentar el producto de trabajo al resto del equipo encargado de la inspección, debe comprender a cabalidad el producto con el objetivo de guiar al equipo de trabajo en el proceso de inspección. 
+
+\subsubsection{Inspector}
+
+Es el encargado de inspeccionar el producto de trabajo e identificar errores y defectos. Se encarga del proceso de inspección según las instrucciones entregadas por el moderador. 
+
+\subsubsection{Secretario}
+
+Se encarga de realizar el registro de las observaciones, identificando y clasificando los defectos encontrados, participa de la inspección en igualdad al resto del equipo y una vez finalizada la inspección debe leer cada defecto y su clasificación. Adicionalmente se encarga de anotar acciones correctivas y los plazos de estas. 
+
+\subsubsection{Observador}
+
+El rol de observador es opcional. Se encarga de observar y apuntar la información de los participantes del proceso de revisión y del proceso mismo con el objetivo de poder realizar mejora continua a las actividades realizadas. 
+
+\subsection{Etapas de Revisión}
+
+\subsubsection{Planificación}
+
+\paragraph{Objetivo\\}
+
+El objetivo de esta etapa es verificar que el producto se encuentre en condiciones de ser inspeccionado y planificar las actividades para garantizar el éxito de la revisión.
+
+\paragraph{Participantes\\}
+
+Moderador y el autor.
+
+\paragraph{Criterios de entrada}
+
+\begin{enumerate}
+	\item 
+		El autor señala que el producto de trabajo está listo para la revisión.
+	\item
+		La existencia de participantes apropiados y con disponibilidad de tiempo.
+\end{enumerate}
+
+\paragraph{Actividades}
+\begin{enumerate}
+	\item 
+		Selección de los participantes y asignación de roles.
+	\item
+		Determinar el tamaño del producto de trabajo por ser revisado.
+	\item
+		Determinar los criterios que el producto debe satisfacer.
+	\item
+		Establecer la necesidad de una reunión orientación.
+	\item
+		Planificar la reunión de orientación y/o la inspección.
+	\item
+		Preparación y distribución del paquete de revisión a los participantes.
+	\item
+		Registro del tiempo usado durante la fase de planificación.
+\end{enumerate}
+
+\paragraph{Criterios de salida\\}
+
+Cada participante completa satisfactoriamente la checklist de las tareas asignadas a la etapa de planificación. 
+
+\subsubsection{Orientación (opcional)}
+
+\paragraph{Objetivo\\}
+
+El objetivo de esta reunión es instruir a los participantes sobre el producto de trabajo y reconocer el proceso de revisión que se aplicará a dicho producto.
+
+\paragraph{Participantes\\}
+
+Moderador, autor y cualquier otro participante que requiera información sobre el producto o el proceso de revisión.
+
+\paragraph{Criterios de entrada\\}
+
+Los criterios de salida de la etapa de planificación han sido completados satisfactoriamente.
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item 
+		Descripción general del producto de trabajo sujeto a inspección.
+	\item
+		Revisar la asignación de roles y el plan para la inspección.
+	\item
+		Responder cualquier consulta.
+\end{enumerate}
+
+\paragraph{Criterios de salida}
+
+\begin{enumerate}
+	\item 
+		Todos los participantes están preparados para proceder.
+	\item
+		Todos los participantes están preparados para proceder.
+\end{enumerate}
+
+\subsubsection{Preparación}
+
+\paragraph{Objetivo\\}
+
+El objetivo de esta etapa es que cada miembro evalúe el producto de trabajo para detectar defectos, clasifique estos defectos y los documente. 
+
+\paragraph{Participantes\\}
+
+Moderador, presentador y cualquier participante bajo el rol de inspector.
+
+\paragraph{Criterios de entrada\\}
+
+Los criterios de salida de la etapa de planificación y de la orientación han sido completados satisfactoriamente.
+
+\paragraph{Actividades}
+\begin{enumerate}
+	\item 
+		Los inspectores revisan el producto de trabajo y registran los defectos detectados.
+	\item
+		Clasificar todos los defectos.
+	\item
+		El presentador se prepara para exponer el producto durante la reunión de inspección.
+	\item
+		Entrega del informe de revisión.
+\end{enumerate}
+
+\paragraph{Criterios de salida}
+
+\begin{enumerate}
+	\item 
+		Los defectos han sido correctamente documentados. 
+	\item
+		Todos los participantes están preparados para proceder en la inspección.
+	\item
+		Cada participante completa satisfactoriamente la checklist de las tareas asignadas a la etapa de preparación.
+\end{enumerate}
+
+\subsubsection{Inspección}
+
+\paragraph{Objetivo\\}
+
+Los objetivos de esta etapa son que los participantes lleguen a un consenso respecto de los defectos que afectan al producto de trabajo, decidan si requiere de una revisión adicional, y que discutan y documenten sobre las lecciones aprendidas durante el proceso.
+
+\paragraph{Participantes\\}
+
+Moderador, presentador, autor, inspector(es), secretario y, opcionalmente, un observador.
+
+\paragraph{Criterios de entrada\\}
+
+Todos los participantes pueden participar de la inspección.
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item
+		Se enuncian los roles, el enfoque y las guías para llevar a cabo la inspección.
+	\item
+		El presentador describe el producto de trabajo.
+	\item		
+		Se nombran los defectos globales que afectan la completitud del producto de trabajo.
+	\item		
+		Se nombran los defectos específicos por ser revisados y registrados.
+	\item		
+		Los errores de formatos son entregados al autor para acciones correctivas.
+	\item
+		Asignación de las los defectos no resueltos.
+	\item 
+		Determinación sobre la necesidad de tiempo adicional. 
+	\item
+		Emplear la hora adicional para terminar las actividades restantes.
+	\item
+		Establecer la necesidad de una revisión adicional.
+	\item
+		Solicitar retroalimentación a los participantes en relación con la inspección.
+\end{enumerate}
+
+\paragraph{Criterios de salida}
+
+\begin{enumerate}
+	\item
+	Los defectos han sido registrados
+	\item
+	Los defectos no resueltos han sido asignados.
+\end{enumerate}
+
+\subsubsection{Rework}
+
+\paragraph{Objetivo\\}
+
+El objetivo de esta etapa es corregir los defectos y resolver aquellos clasificados como no resueltos.
+
+\paragraph{Participantes\\}
+
+Autor.
+
+\paragraph{Criterios de entrada\\}
+
+Los criterios de salida de la etapa de inspección han sido completados satisfactoriamente.
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item
+		Estimar el tiempo requeridos para resolver los defectos no resueltos.
+	\item
+		Corregir los defectos identificados en el producto de trabajo.
+	\item
+		Resolver los defectos no resueltos del producto de trabajo.
+	\item
+		Corregir los errores de forma identificados en el producto de trabajo.
+\end{enumerate}
+
+\paragraph{Criterios de salida\\}
+
+Todas las correcciones han sido completadas. 
+
+\subsubsection{Seguimiento}
+
+\paragraph{Objetivo\\}
+
+Los objetivos de esta etapa son asegurar que todos los defectos y los errores de forma han sido corregidos. Además, que se haya dado solución a los defectos no resueltos.
+
+\paragraph{Participantes\\}
+
+Moderador y autor.
+
+\paragraph{Criterios de entrada\\}
+
+Los criterios de salida de la etapa de rework han sido completados satisfactoriamente.
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item
+		El moderador confirma que todos los defectos y errores de forma hayan sido corregidos, y que a los defectos no resueltos se les haya dado solución.
+	\item
+		Completar la documentación de la revisión.
+\end{enumerate}
+
+\paragraph{Criterios de salida}
+
+\begin{enumerate}
+	\item
+		Los templates de revisión han sido completados y distribuidos.
+	\item
+		Todos los defectos no resueltos han sido incorporados al monitoreo del proceso.
+\end{enumerate}
+
+\subsection{Informe de revisión}
+
+Se adjunta en anexos una pauta sobre el informe de revisión.
+
+\section{Auditorias}
+
+Las auditorias tienen como fin comparar el estado actual de los productos de trabajo con el estado reportado, mediante la evaluación del cumplimiento de normas, estándares y otros acuerdos existentes.
+
+El proceso de auditoria descrito en [web-00] comienza cuando el iniciador identifica la necesidad de una auditoría. Esto da lugar a que un auditor elabore un plan de auditoría, el cual es expuesto a los demás auditores y a la institución auditada durante la reunión de orientación. Ya definido el curso de la auditoría los auditores pueden comenzar con la evaluación. Para ello se presentan en la institución auditada para entrevistar a los desarrolladores, revisar la documentación asociada a los procesos examinados e inspeccionar los productos. Con la información recopilada, el auditor entrega las observaciones y conclusiones preliminares a la institución auditada en la reunión de cierre. Después de la discusión de estos resultados, el auditor desarrolla un informe de auditoría. Con este último la institución está en condiciones de definir las acciones correctivas y monitorear su implantación.
+
+Las auditorias pueden ser realizadas tanto por un equipo formado por personas pertenecientes a la organización (auditorías internas) como por un equipo externo (auditorías externas). Adicionalmente, estas pueden ser realizadas en cualquier etapa del desarrollo del software variando en el tipo de auditoria y el uso que se le data la información generada. 
+
+\subsection{Roles y responsabilidades}
+
+\subsubsection{Iniciador}
+
+Es quien inicia y aprueba las auditorias, es responsable de indicar las directrices básicas que debe tener la auditoria, es decir, definir el propósito, los criterios a evaluar, el curso que se seguirá y cuáles serán los productos y/o procesos a ser auditados. Además, se debe encargar de revisar los productos generados y dirigir las acciones correctivas.
+
+\subsubsection{Moderador (Líder del equipo auditor)}
+
+Es el responsable de asegurar el logro de los objetivos trazados. Debe trazar los planes de la auditoria, definir el equipo auditor y dirigirlo a lo largo de todo el proceso. 
+
+\subsubsection{Auditores}
+
+Son los encargados de examinar los productos y procesos según el plan de auditoria, registrando todas las observaciones y comunicándolas al moderador.
+
+\subsubsection{Institución auditada}
+
+Corresponde a la institución a ser auditada. Debe nombrar sus representantes y facilitar toda la información necesaria a los auditores.
+
+\subsubsection{Secretario}
+
+Es el encargado de registrar todas las anomalías, decisiones, recomendaciones y conclusiones realizadas.
+
+\subsubsection{Nivel de gestión}
+
+Corresponde a los directivos del nivel de gestión, si bien, no son parte explicita del equipo de auditoria deben programar las auditorias y las normas de esta, facilitar toda la información requerida y entregar entrenamiento y orientación al equipo auditado. 
+
+\subsection{Etapas de la auditoria}
+
+\subsubsection{Planificación}
+
+\paragraph{Objetivo\\}
+
+El objetivo principal de esta etapa es establecer el ámbito y los recursos para la auditoría, como también, planificar sus actividades.
+
+\paragraph{Participantes\\}
+
+Iniciador, moderador (líder del equipo auditor).
+
+\paragraph{Criterios de entrada}
+
+\begin{enumerate}
+	\item
+		Una autoridad competente ha autorizado la auditoría.
+	\item
+		Se encuentra disponible la información requerida para esta etapa de la auditoría.
+\end{enumerate}
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item
+		El iniciador decide la necesidad de una auditoría.
+	\item
+		El moderador debe comprender el objetivo del proyecto de desarrollo de software y los productos producidos.
+	\item	
+		El moderador debe informarse sobre el estado de avance del proyecto.
+	\item
+		Definir el ámbito de la auditoría.
+	\item
+		Desarrollar un checklist para la auditoría.
+	\item
+		El moderador debe presentar el plan de auditoría al iniciador para su corrección y aprobación. 
+	\item
+		El iniciador notifica a la institución auditada sobre el desarrollo de una auditoría.
+	\item
+		El auditor selecciona los miembros del equipo de auditoría.
+\end{enumerate}
+
+\paragraph{Criterios de salida}
+
+\begin{enumerate}
+	\item
+		El plan de auditoría ha sido aprobado.
+	\item
+		La institución auditada ha sido notificada sobre la futura auditoría.
+\end{enumerate}
+
+\subsubsection{Reunión de Orientación}
+
+\paragraph{Objetivo\\}
+
+El propósito de esta etapa es clarificar el contenido del plan de auditoría a los miembros de la institución auditada y corroborar que el equipo de auditoría comprende los objetivos del proyecto.
+
+\paragraph{Participantes\\}
+
+Iniciador, moderador, auditores, secretario, institución auditada.
+
+\paragraph{Criterios de entrada\\}
+
+El plan de auditoría ha sido aprobado.
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item
+		El moderador explica a los demás el contenido del plan de auditoría.
+	\item
+		La institución auditada presenta el proyecto a los auditores.
+	\item
+		Se resuelven las dudas planteadas por las partes.
+\end{enumerate}
+
+\paragraph{Criterios de salida}
+
+\begin{enumerate}
+	\item
+	El equipo de auditoría comprende los objetivos del proyecto.
+	\item
+	La institución auditada comprende el plan de auditoría.
+\end{enumerate}
+
+\subsubsection{Evaluación}
+
+La presente etapa se divide en 3 sub etapas
+
+\paragraph{Site visit}
+
+\subparagraph{Objetivo\\}
+
+El propósito de esta etapa es comprobar que los productos requeridos están siendo desarrollados de acuerdo a los estándares aplicables, que el proceso se ajusta a los procedimientos definidos y que los reportes del estado del proyecto reflejan su situación actual.
+
+\subparagraph{Participantes\\}
+
+Auditores, institución auditada.
+
+\subparagraph{Criterios de entrada\\}
+
+\begin{enumerate}
+	\item
+		El equipo de auditoría comprende los objetivos del proyecto.
+	\item
+		La institución auditada comprende el plan de auditoría.
+	\item
+		Los recursos solicitados en el plan de auditoría se encuentran disponibles.
+\end{enumerate}
+
+\subparagraph{Actividades\\}
+
+\begin{enumerate}
+	\item
+		El equipo de auditoría comprende los objetivos del proyecto.
+	\item
+		La institución auditada comprende el plan de auditoría.
+	\item
+		Los recursos solicitados en el plan de auditoría se encuentran disponibles.
+	\item
+		Los auditores entrevistan al equipo desarrollador. 
+	\item
+		Los auditores examinan los registros del proyecto.
+	\item
+		Los auditores examinan los productos de trabajo.
+\end{enumerate}
+
+\subparagraph{Criterios de salida\\}
+
+\begin{enumerate}
+	\item
+		Los auditores han recopilado información suficiente sobre los productos/procesos auditados.
+	\item
+		Todas las observaciones han sido debidamente registradas.
+\end{enumerate}
+
+\paragraph{Reunión de cierre}
+
+\subparagraph{Objetivo\\}
+
+El propósito de esta reunión es crear una instancia en que los auditores presenten los resultados (al nivel de observaciones) de la evaluación a la institución auditada para permitir a esta última manifestar su opinión frente a ellas, clarificar cualquier mal interpretación en la que los auditores hayan incurrido e indicar posibles omisiones importantes dentro de la etapa previa.
+
+\subparagraph{Participantes\\}
+
+Iniciador, moderador, auditores, institución auditada, secretario.
+
+\subparagraph{Criterios de entrada}
+
+\begin{enumerate}
+	\item
+		Los auditores han recopilado información suficiente sobre los productos/procesos auditados.
+	\item 
+		Todas las observaciones han sido debidamente registradas.
+\end{enumerate}
+
+\subparagraph{Actividades}
+
+\begin{enumerate}
+	\item
+		Los auditores informan sobre el estado del proceso de auditoría.
+	\item
+		Los auditores exponen las observaciones preliminares.
+	\item
+		La institución auditada se manifiesta ante las observaciones. 
+\end{enumerate}
+
+\subparagraph{Criterios de salida}
+
+
+\begin{enumerate}
+	\item
+		Los auditores han expuesto las conclusiones y recomendaciones preliminares.
+	\item
+		Se han resuelto todas las observaciones hechas por la institución auditada.
+	\item
+		Se ha llegado a acuerdo en relación con los resultados de la auditoría.
+\end{enumerate}
+
+\paragraph{Informe de Resultados}
+
+\subparagraph{Objetivo\\}
+
+El objetivo de la presente etapa es desarrollar y entregar un informe sobre los resultados de la auditoría.
+
+\subparagraph{Participantes\\}
+
+Moderador, auditores.
+
+\subparagraph{Criterios de entrada\\}
+
+La reunión de término ha finalizado con éxito. 
+
+\subparagraph{Actividades}
+
+\begin{enumerate}
+	\item
+		El moderador prepara un informe de auditoría.
+	\item
+		El moderador entrega el informe de auditoría al iniciador.
+	\item
+		El iniciador recibe y distribuye el informe de auditoría.
+\end{enumerate}
+
+\subparagraph{Criterios de salida\\}
+
+El informe de auditoría fue entregado al iniciador.
+
+\subsubsection{Seguimiento}
+
+\paragraph{Objetivo\\}
+
+El propósito del seguimiento es que el iniciador junto a la institución auditada identifique las acciones correctivas necesarias para eliminar o prevenir las disconformidades para su posterior implantación.
+
+\paragraph{Participantes\\}
+
+Iniciador, institución auditada.
+
+\paragraph{Criterios de entrada\\}
+
+El informe de auditoría fue entregado al iniciador.
+
+\paragraph{Actividades}
+
+\begin{enumerate}
+	\item
+		El iniciador y la institución auditada identifican acciones correctivas para eliminar o prevenir las disconformidades.
+	\item
+		Implementación de las acciones correctivas definidas.
+	\item
+		Verificar la implantación de las acciones correctivas.
+\end{enumerate}
+
+\paragraph{Criterios de salida\\}
+
+La institución auditada está comprometida con el seguimiento de las acciones correctivas iniciadas en pro de resolver las disconformidades detectadas durante la auditoría.
+
+\subsection{Informe de Auditoria}
+
+Se adjunta en anexos una pauta sobre el informe de auditoria.
+
+\section{Checklist}
+
+Se adjuntan las plantillas de los documentos de checklist en anexos. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
