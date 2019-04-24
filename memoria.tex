@@ -27,7 +27,7 @@
 \documentclass[
 	12pt,			% Tamaño de fuente (11pt)
 	letterpaper,	% Tamaño del papel (carta)
-	oneside,		% Doble Cara
+	twoside,		% Doble Cara
 ]{thesis_utfsm}
 
 \usepackage{thesis_utfsm}   % Archivo de estilos 
@@ -42,6 +42,7 @@
 % Generadores de texto aleatorio (se pueden eliminar)
 \usepackage{blindtext}      % automated text generation
 \usepackage{lipsum}         % automated text generation
+\usepackage{natbib}
 
 
 %---------------------------------------------------------------------------
@@ -90,6 +91,7 @@
 \input{includes/Capitulo05}
 \input{includes/Capitulo06}
 \input{includes/Capitulo07}
+\nocite{*}
 %...                    % Agregar aquí más capítulos
 
 
@@ -97,7 +99,7 @@
 %	Bibliografía
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{spacing}{1}      % Single space for Bibliography
-    %\bibliographystyle{thesis_utfsm}    % Alternative 'apalike'
+    \bibliographystyle{thesis_utfsm}    % Alternative 'apalike'
     \bibliography{bibliography}         % Archivo 'bibliography.bib'
 \end{spacing}
 
