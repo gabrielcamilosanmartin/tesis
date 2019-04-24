@@ -16,9 +16,9 @@ Se debe garantizar la respuesta de la aplicación ante una acción del usuario y
 
 \item[Usabilidad:]\hfill
 
-Facilidad en el uso de la aplicación, reflejándose en la rapidez de aprender el funcionamiento del sistema y recordar este aprendizaje.
+Facilidad en el uso de la aplicación, reflejándose en la rapidez para aprender el funcionamiento del sistema y recordar este aprendizaje.
 
-\item[Multiplataforma:]\hfill
+\item[Adapabilidad:]\hfill
 
 Capacidad de la aplicación de funcionar en distintos entornos informáticos.
 
@@ -58,9 +58,9 @@ Es necesario que la información entregada por cualquiera de los distintos módu
 
 Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
 
-Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \emph{API} de \emph{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el modulo contenedor del \emph{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \emph{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \emph{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
+Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \emph{API} de \emph{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \emph{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \emph{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \emph{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
 
-Por otro lado, la aplicación móvil y la \emph{API} desarrollada, si deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
+Por otro lado, la aplicación móvil y la \emph{API} desarrollada, deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
 
 \subsubsection{Objetivos cuantificables}
 
@@ -101,7 +101,7 @@ Es necesario para el módulo de la aplicación móvil del sistema contar con una
 
 Para esto es necesario que la interfaz aplique colores y símbolos coherentes con las acciones a realizar o información que muestra, Información ordenada y fácil de entender.
 
-Dado a que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
+Dado que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
 
 Considerando que el primer \emph{iPhone} contaba con un tamaño de pantalla de 3,5 pulgadas y que estas van en aumento, se considerará esta como el tamaño mínimo de pantalla.
 
@@ -161,7 +161,7 @@ Respecto a la resolución mínima de pantalla, se puede apreciar en el gráfico 
     \end{tabular}
 \end{table}
 
-\subsection{Multiplataforma}
+\subsection{Adapabilidad}
 
 En vista de la existencia de distintas plataformas móviles, es necesario asegurar un correcto funcionamiento con los sistemas operativos más comunes de estas. A continuación, se puede observar en la gráfica \ref{chart:OS} el detalle en porcentajes del mercado que poseen los sistemas operativos más populares del último año.
 
@@ -208,7 +208,7 @@ Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populare
 	\end{bchart}
 \end{figure}
 
-Si bien, corresponde a un segmento importante el uso de \emph{Android KitKat} (10\%) es desde la versión de la \emph{API} de \emph{Android} 21,, empleada por google en el desarrollo de Android Lollipop, que se integra nativamente \emph{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considerá el desarrollo enfocado en sistemas \emph{Android} 5.0 o mayores.
+Si bien, corresponde a un segmento importante el uso de \emph{Android KitKat} (10\%) es desde la versión de la \emph{API} de \emph{Android} 21, empleada por google en el desarrollo de \emph{Android Lollipop}, que se integra nativamente \emph{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considerá el desarrollo enfocado en sistemas \emph{Android} 5.0 o mayores.
 
 Por otro lado, las versiones de \emph{iOS} y el porcentaje de su participación en el mercado se muestran en el gráfico \ref{chart:iOS Version}.
 
@@ -248,8 +248,8 @@ En base al porcentaje de uso de las distintas versiones de \emph{iOS} del gráfi
 \subsubsection{Criterios de Validación}
 
 \begin{table}[H]
-    \caption[Validación para los indicadores de multiplataforma.] {Validación para los indicadores de multiplataforma.}
-    \label{tbl:Criterios de Validación multiplataforma}
+    \caption[Validación para los indicadores de adapabilidad.] {Validación para los indicadores de adapabilidad.}
+    \label{tbl:Criterios de Validación Adapabilidad}
     \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
         \hline
         \textbf{Criterio} &  \textbf{Medición}\\
@@ -295,13 +295,13 @@ Los criterios de validación se basan en la experiencia de aplicaciones similare
 
 \subsection{Soportar alta carga}
 
-Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \emph{API}, es de suma importancia que cuente con el soporte necesario para responder una gran cantidad de solicitudes en un corto periodo de tiempo.
+Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \emph{API}, es de suma importancia que cuente con el soporte necesario para responder a una gran cantidad de solicitudes en un corto periodo de tiempo.
 
-Mediante herramientas como la consola de \emph{Google Play} o \emph{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, nímero de terminales con la aplicación instalada, entre otros factores.
+Mediante herramientas como la consola de \emph{Google Play} o \emph{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, número de terminales con la aplicación instalada, entre otros factores.
 
-Esta información se emplea para calcular el promedio de usuarios conectados y se estima en base a aplicaciones similares que cada uno de ellos realizá  una consulta al servidor cada 2 segundos.
+Esta información se emplea para calcular el promedio de usuarios conectados y se estima, en base a aplicaciones similares, que cada uno de ellos realizará una consulta al servidor cada 2 segundos.
 
-Es importante considerar que el número de usuarios varía dependiendo de la popularidad de \emph{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
+Es importante considerar que el número de usuarios varia dependiendo de la popularidad de \emph{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
 
 
 \subsubsection{Objetivos cuantificables}
@@ -435,11 +435,11 @@ Para lograr lo anterior es necesario plantear una serie de puntos que permitan a
 
 Lo primero que debe ser tomado en cuenta es la creación del sistema de forma modular. Esto se logra encapsulando funciones, para que trabajen de manera privada y que solamente puedan ser llamadas por otras funciones sin modificar la forma en que realizan sus procesos. De este modo, se pueden modificar de forma independiente. 
 
-Para este desarrollo se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \emph{Android} y \emph{iOS}, el segundo módulo es una \emph{API} instalada en un servidor \emph{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
+Para este desarrollo, se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \emph{Android} y \emph{iOS}, el segundo módulo es una \emph{API} instalada en un servidor \emph{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
 
 \paragraph{Encapsulamiento de los módulos\\}
 
-Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizontal de la arquitectura del servidor. La escalabilidad vertical permite aumentar la capacidad física de almacenamiento y procesamiento aumentando las características del hardware donde se encuentra el sistema. Mientras que la horizontal permite aumentar el número de nodos que conforman el \emph{Cluster} del servidor. Para el caso de \emph{Gerprin}, \emph{AWS EC2} permite la rápida implementación de ambos métodos.
+Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizontal de la arquitectura del servidor. La escalabilidad vertical permite aumentar la capacidad física de almacenamiento y procesamiento, aumentando las características del hardware donde se encuentra el sistema. Mientras que la horizontal permite aumentar el número de nodos que conforman el \emph{Cluster} del servidor. Para el caso de \emph{Gerprin}, \emph{AWS EC2} permite la rápida implementación de ambos métodos.
 
 \subsection{Mantenibilidad}
 
