@@ -16,7 +16,7 @@ Se debe garantizar la respuesta de la aplicación ante una acción del usuario y
 
 \item[Usabilidad:]\hfill
 
-Facilidad en el uso de la aplicación, reflejándose en la facilidad de aprender el funcionamiento del sistema y recordar este aprendizaje.
+Facilidad en el uso de la aplicación, reflejándose en la rapidez de aprender el funcionamiento del sistema y recordar este aprendizaje.
 
 \item[Multiplataforma:]\hfill
 
@@ -56,9 +56,9 @@ En la presente sección se establecerán los indicadores de cada uno de los atri
 
 Es necesario que la información entregada por cualquiera de los distintos módulos que forman \emph{Gerprin} sea legible por los módulos restantes y de este modo no tener perdidas en la comunicación entre distintas plataformas. Las solicitudes y respuesta deben ser verídicas y corresponder a acciones reales desencadenadas por los actores de la aplicación.
 
-Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, pese a lo anterior se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
+Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
 
-Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \emph{API} del sistema al momento de realizar activación o desactivación del sistema cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el sistema \emph{GPS} envía la posición. Por este motivo el envío de la posición se realiza mediante protocolo \emph{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \emph{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
+Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \emph{API} de \emph{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el modulo contenedor del \emph{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \emph{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \emph{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
 
 Por otro lado, la aplicación móvil y la \emph{API} desarrollada, si deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
 
@@ -101,7 +101,7 @@ Es necesario para el módulo de la aplicación móvil del sistema contar con una
 
 Para esto es necesario que la interfaz aplique colores y símbolos coherentes con las acciones a realizar o información que muestra, Información ordenada y fácil de entender.
 
-Debido a que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
+Dado a que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
 
 Considerando que el primer \emph{iPhone} contaba con un tamaño de pantalla de 3,5 pulgadas y que estas van en aumento, se considerará esta como el tamaño mínimo de pantalla.
 
@@ -163,7 +163,7 @@ Respecto a la resolución mínima de pantalla, se puede apreciar en el gráfico 
 
 \subsection{Multiplataforma}
 
-Debido a la existencia de distintas plataformas móviles, es necesario asegurar un correcto funcionamiento con los sistemas operativos más comunes de estas. A continuación, se puede observar en la gráfica \ref{chart:OS} el detalle en porcentajes del mercado que poseen los sistemas operativos más populares del último año.
+En vista de la existencia de distintas plataformas móviles, es necesario asegurar un correcto funcionamiento con los sistemas operativos más comunes de estas. A continuación, se puede observar en la gráfica \ref{chart:OS} el detalle en porcentajes del mercado que poseen los sistemas operativos más populares del último año.
 
 \begin{figure}[H]
 	\centering
@@ -183,9 +183,7 @@ Debido a la existencia de distintas plataformas móviles, es necesario asegurar 
 	\end{bchart}
 \end{figure}
 
-Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \emph{Android} e \emph{iOS}, que en conjunto corresponden al 95,26\% del mercado. Debido al amplio segmento que abarcan estos dos sistemas, el desarrollo de \emph{Gerprin} se centrara en dichas plataformas.
-
-Para el caso de \emph{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
+Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \emph{Android} e \emph{iOS}, que en conjunto corresponden al 95,26\% del mercado. Teniendo en cuenta estas cifras y el amplio segmento que abarcan estos dos sistemas, el desarrollo de \emph{Gerprin} se concentrará en dichas plataformas. Para el caso de \emph{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
 
 \begin{figure}[H]
 	\centering
@@ -210,7 +208,7 @@ Para el caso de \emph{Android}, el uso de las distintas versiones se muestra en 
 	\end{bchart}
 \end{figure}
 
-Si bien, corresponde a un segmento importante el uso de \emph{Android KitKat} (10\%) es desde la versión de la \emph{API} de \emph{Android} 21 que se integra nativamente \emph{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considera el desarrollo enfocado en sistemas \emph{Android} 5.0 o mayores.
+Si bien, corresponde a un segmento importante el uso de \emph{Android KitKat} (10\%) es desde la versión de la \emph{API} de \emph{Android} 21,, empleada por google en el desarrollo de Android Lollipop, que se integra nativamente \emph{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considerá el desarrollo enfocado en sistemas \emph{Android} 5.0 o mayores.
 
 Por otro lado, las versiones de \emph{iOS} y el porcentaje de su participación en el mercado se muestran en el gráfico \ref{chart:iOS Version}.
 
@@ -297,13 +295,13 @@ Los criterios de validación se basan en la experiencia de aplicaciones similare
 
 \subsection{Soportar alta carga}
 
-Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \emph{API} es de suma importancia que cuente con el soporte necesario para responder una gran cantidad de solicitudes en un corto periodo de tiempo.
+Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \emph{API}, es de suma importancia que cuente con el soporte necesario para responder una gran cantidad de solicitudes en un corto periodo de tiempo.
 
-Mediante herramientas como la consola de \emph{Google Play} o \emph{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, numero de terminales con la aplicación instalada, entre otros factores.
+Mediante herramientas como la consola de \emph{Google Play} o \emph{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, nímero de terminales con la aplicación instalada, entre otros factores.
 
-Esta información se emplea para calcular el promedio de usuarios conectados y se considera que cada uno de ellos realiza una consulta al servidor cada 2 segundos.
+Esta información se emplea para calcular el promedio de usuarios conectados y se estima en base a aplicaciones similares que cada uno de ellos realizá  una consulta al servidor cada 2 segundos.
 
-Es importante considerar que el numero de usuarios es variable dependiendo de la popularidad de esta. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
+Es importante considerar que el número de usuarios varía dependiendo de la popularidad de \emph{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
 
 
 \subsubsection{Objetivos cuantificables}
@@ -332,9 +330,9 @@ Los criterios de validación se basan en la experiencia de aplicaciones similare
 
 Debido a la importancia de la aplicación es completamente necesario que esta se encuentre disponible el mayor tiempo posible.
 
-Los usuarios deben tener plena confianza en que la plataforma se encuentra disponible y enviara las notificaciones \emph{push} si el sistema detecta un intento de robo, ya sea un intento de encender el vehículo por un usuario no autorizado o este se desplazó sin autorización.
+Los usuarios deben tener plena confianza en que la plataforma se encuentra disponible y enviará las notificaciones \emph{push} si el sistema detecta un intento de robo, ya sea un intento de encender el vehículo por un usuario no autorizado o si este se desplazó sin autorización.
 
-Además, debe estar disponible en casos de emergencia que se necesite desactivar el cortacorriente de forma remota sin una huella digital, esto para casos de emergencia.
+Además, debe estar disponible en casos de ser necesario desactivar el cortacorriente de forma remota sin una huella digital cuando ocurra una emergencia.
 
 Es deseable, además, que la aplicación se encuentre offline por periodos no mayores a 4 horas en caso de presentar algún problema.
 
@@ -342,7 +340,7 @@ Basado en criterios de experiencias en el desarrollo de aplicaciones similares, 
 
 \subsubsection{Clúster de servidores}
 
-La aplicación debe encontrarse en un \emph{Cluster} de servidores, es decir, debe encontrarse en varios computadores respondiendo las solicitudes como uno solo. Esto con el objeto de dividir la carga de procesamiento de los servidores, evitar la falta de disponibilidad por fallas de hardware y permitir escalar la cantidad de carga que puede aguantar el servicio de forma rápida y fácil. Debe encontrarse en un mínimo de dos equipos con la posibilidad de aumentar dicha cantidad según la demanda.
+La aplicación debe encontrarse en un \emph{Cluster} de servidores, es decir, debe encontrarse en varios computadores respondiendo las solicitudes como uno solo. Esto, con el objeto de dividir la carga de procesamiento de los servidores, evitar la falta de disponibilidad por fallas de hardware y permitir escalar la cantidad de carga que puede aguantar el servicio de forma rápida y fácil. Por esta razón el sistema deberá contar con un mínimo de dos instancias de máquinas con la posibilidad de aumentar dicha cantidad según la demanda.
 
 \subsubsection{Objetivos cuantificables}
 
@@ -435,7 +433,7 @@ Para lograr lo anterior es necesario plantear una serie de puntos que permitan a
 
 \paragraph{Encapsulamiento de los módulos\\}
 
-Lo primero que debe ser tomado en cuenta es la creación del sistema de forma modular. Esto se logra encapsulando funciones, para que trabajen de manera privada y que solamente puedan ser llamadas por otras funciones sin modificar la forma realizan sus procesos. De este modo, se pueden modificar de forma independiente. 
+Lo primero que debe ser tomado en cuenta es la creación del sistema de forma modular. Esto se logra encapsulando funciones, para que trabajen de manera privada y que solamente puedan ser llamadas por otras funciones sin modificar la forma en que realizan sus procesos. De este modo, se pueden modificar de forma independiente. 
 
 Para este desarrollo se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \emph{Android} y \emph{iOS}, el segundo módulo es una \emph{API} instalada en un servidor \emph{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
 
@@ -445,7 +443,7 @@ Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizon
 
 \subsection{Mantenibilidad}
 
-\emph{ISO/IEC 25010}\footnote{I. S. Organization, “ISO/IEC 25010,” in Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models, ed, 2011} define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \footnote{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
+\emph{ISO/IEC 25010}\footnote{I. S. Organization, “ISO/IEC 25010,” in Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models, ed, 2011} define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \emph{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
 
 \subsubsection{Objetivos cuantificables}
 
