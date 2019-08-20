@@ -1,0 +1,149 @@
+\BOOKMARK [0][-]{chapter.1}{Introducci\363n}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Resumen del proyecto}{chapter.1}% 2
+\BOOKMARK [1][-]{section.1.2}{Prop\363sito}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.3}{Alcance}{chapter.1}% 4
+\BOOKMARK [0][-]{chapter.2}{Requisitos no funcionales}{}% 5
+\BOOKMARK [1][-]{section.2.1}{Definici\363n de atributos de calidad}{chapter.2}% 6
+\BOOKMARK [1][-]{section.2.2}{Objetivos Cuantificables}{chapter.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.1}{Fiabilidad}{section.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.1.1}{Objetivos cuantificables}{subsection.2.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.1.2}{Criterios de medici\363n.}{subsection.2.2.1}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{Usabilidad}{section.2.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.2.2.1}{Objetivos cuantificables}{subsection.2.2.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.2.2.2}{Criterios de Validaci\363n}{subsection.2.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.2.3}{Adapabilidad}{section.2.2}% 14
+\BOOKMARK [3][-]{subsubsection.2.2.3.1}{Objetivos cuantificables}{subsection.2.2.3}% 15
+\BOOKMARK [3][-]{subsubsection.2.2.3.2}{Criterios de Validaci\363n}{subsection.2.2.3}% 16
+\BOOKMARK [2][-]{subsection.2.2.4}{Temporizaci\363n}{section.2.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.2.4.1}{Objetivos cuantificables}{subsection.2.2.4}% 18
+\BOOKMARK [3][-]{subsubsection.2.2.4.2}{Criterios de Validaci\363n}{subsection.2.2.4}% 19
+\BOOKMARK [2][-]{subsection.2.2.5}{Soportar alta carga}{section.2.2}% 20
+\BOOKMARK [3][-]{subsubsection.2.2.5.1}{Objetivos cuantificables}{subsection.2.2.5}% 21
+\BOOKMARK [3][-]{subsubsection.2.2.5.2}{Criterios de Validaci\363n}{subsection.2.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.2.6}{Disponibilidad}{section.2.2}% 23
+\BOOKMARK [3][-]{subsubsection.2.2.6.1}{Cl\372ster de servidores}{subsection.2.2.6}% 24
+\BOOKMARK [3][-]{subsubsection.2.2.6.2}{Objetivos cuantificables}{subsection.2.2.6}% 25
+\BOOKMARK [3][-]{subsubsection.2.2.6.3}{Criterios de Validaci\363n}{subsection.2.2.6}% 26
+\BOOKMARK [2][-]{subsection.2.2.7}{Seguridad}{section.2.2}% 27
+\BOOKMARK [3][-]{subsubsection.2.2.7.1}{Limitar puntos de acceso al servidor}{subsection.2.2.7}% 28
+\BOOKMARK [3][-]{subsubsection.2.2.7.2}{Objetivos cuantificables}{subsection.2.2.7}% 29
+\BOOKMARK [3][-]{subsubsection.2.2.7.3}{Criterios de Validaci\363n}{subsection.2.2.7}% 30
+\BOOKMARK [2][-]{subsection.2.2.8}{Escalabilidad}{section.2.2}% 31
+\BOOKMARK [3][-]{subsubsection.2.2.8.1}{Objetivos cuantificables}{subsection.2.2.8}% 32
+\BOOKMARK [3][-]{subsubsection.2.2.8.2}{Criterios de Validaci\363n}{subsection.2.2.8}% 33
+\BOOKMARK [2][-]{subsection.2.2.9}{Mantenibilidad}{section.2.2}% 34
+\BOOKMARK [3][-]{subsubsection.2.2.9.1}{Objetivos cuantificables}{subsection.2.2.9}% 35
+\BOOKMARK [3][-]{subsubsection.2.2.9.2}{Criterios de Validaci\363n}{subsection.2.2.9}% 36
+\BOOKMARK [0][-]{chapter.3}{Modelo de desarrollo}{}% 37
+\BOOKMARK [1][-]{section.3.1}{Elecci\363n del modelo}{chapter.3}% 38
+\BOOKMARK [1][-]{section.3.2}{Definici\363n de actividades}{chapter.3}% 39
+\BOOKMARK [2][-]{subsection.3.2.1}{Exploraci\363n}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.2}{Planificaci\363n de las entregas}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.3}{Iteraciones}{section.3.2}% 42
+\BOOKMARK [2][-]{subsection.3.2.4}{Integraci\363n y pruebas}{section.3.2}% 43
+\BOOKMARK [2][-]{subsection.3.2.5}{Aceptaci\363n y entrega}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.6}{Muerte del proyecto}{section.3.2}% 45
+\BOOKMARK [1][-]{section.3.3}{Productos de Trabajo}{chapter.3}% 46
+\BOOKMARK [2][-]{subsection.3.3.1}{Especificaci\363n de Requerimientos}{section.3.3}% 47
+\BOOKMARK [2][-]{subsection.3.3.2}{Planificaci\363n de proyecto}{section.3.3}% 48
+\BOOKMARK [2][-]{subsection.3.3.3}{Plan de pruebas}{section.3.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.4}{Especificaci\363n del Sistema}{section.3.3}% 50
+\BOOKMARK [2][-]{subsection.3.3.5}{Plan de Aseguramiento de Calidad \(SQA\)}{section.3.3}% 51
+\BOOKMARK [2][-]{subsection.3.3.6}{Manual de usuario}{section.3.3}% 52
+\BOOKMARK [1][-]{section.3.4}{Hitos del desarrollo \(Atributos de Calidad\)}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.4.1}{Por actividades}{section.3.4}% 54
+\BOOKMARK [2][-]{subsection.3.4.2}{Por producto}{section.3.4}% 55
+\BOOKMARK [1][-]{section.3.5}{Puntos de revisi\363n}{chapter.3}% 56
+\BOOKMARK [0][-]{chapter.4}{Gestion de calidad}{}% 57
+\BOOKMARK [1][-]{section.4.1}{Equipo de trabajo}{chapter.4}% 58
+\BOOKMARK [1][-]{section.4.2}{Recursos}{chapter.4}% 59
+\BOOKMARK [2][-]{subsection.4.2.1}{Personal}{section.4.2}% 60
+\BOOKMARK [3][-]{subsubsection.4.2.1.1}{Gerente T\351cnico}{subsection.4.2.1}% 61
+\BOOKMARK [3][-]{subsubsection.4.2.1.2}{Unidad SQA}{subsection.4.2.1}% 62
+\BOOKMARK [3][-]{subsubsection.4.2.1.3}{Unidad SCM}{subsection.4.2.1}% 63
+\BOOKMARK [3][-]{subsubsection.4.2.1.4}{Jefe de Proyecto}{subsection.4.2.1}% 64
+\BOOKMARK [3][-]{subsubsection.4.2.1.5}{Desarrolladores Front-End, Desarrolladores Back-End y Soporte y mantenimiento}{subsection.4.2.1}% 65
+\BOOKMARK [2][-]{subsection.4.2.2}{Infraestructura}{section.4.2}% 66
+\BOOKMARK [3][-]{subsubsection.4.2.2.1}{Oficina}{subsection.4.2.2}% 67
+\BOOKMARK [3][-]{subsubsection.4.2.2.2}{Equipamiento de trabajo}{subsection.4.2.2}% 68
+\BOOKMARK [2][-]{subsection.4.2.3}{Actividades}{section.4.2}% 69
+\BOOKMARK [3][-]{subsubsection.4.2.3.1}{Evaluaci\363n de la selecci\363n de los productos de trabajo}{subsection.4.2.3}% 70
+\BOOKMARK [3][-]{subsubsection.4.2.3.2}{Evaluaci\363n de las herramientas}{subsection.4.2.3}% 71
+\BOOKMARK [3][-]{subsubsection.4.2.3.3}{Evaluaci\363n de la planificaci\363n y el monitoreo del proyecto}{subsection.4.2.3}% 72
+\BOOKMARK [3][-]{subsubsection.4.2.3.4}{Evaluaci\363n de la especificaci\363n de requerimientos}{subsection.4.2.3}% 73
+\BOOKMARK [3][-]{subsubsection.4.2.3.5}{Evaluaci\363n del dise\361o}{subsection.4.2.3}% 74
+\BOOKMARK [3][-]{subsubsection.4.2.3.6}{Evaluaci\363n de la implementaci\363n y de la prueba de unidad}{subsection.4.2.3}% 75
+\BOOKMARK [3][-]{subsubsection.4.2.3.7}{Evaluaci\363n de la integraci\363n y prueba}{subsection.4.2.3}% 76
+\BOOKMARK [3][-]{subsubsection.4.2.3.8}{Evaluaci\363n del producto antes de su liberaci\363n}{subsection.4.2.3}% 77
+\BOOKMARK [3][-]{subsubsection.4.2.3.9}{Evaluaci\363n del proceso de revisi\363n}{subsection.4.2.3}% 78
+\BOOKMARK [3][-]{subsubsection.4.2.3.10}{Evaluaci\363n de las acciones correctivas}{subsection.4.2.3}% 79
+\BOOKMARK [3][-]{subsubsection.4.2.3.11}{Evaluaci\363n del proceso de SCM}{subsection.4.2.3}% 80
+\BOOKMARK [3][-]{subsubsection.4.2.3.12}{Verificar la implementaci\363n de los procesos}{subsection.4.2.3}% 81
+\BOOKMARK [3][-]{subsubsection.4.2.3.13}{Establecer las auditor\355as}{subsection.4.2.3}% 82
+\BOOKMARK [3][-]{subsubsection.4.2.3.14}{Responsabilidades}{subsection.4.2.3}% 83
+\BOOKMARK [0][-]{chapter.5}{Herramientas, t\351cnicas y metodolog\355as}{}% 84
+\BOOKMARK [1][-]{section.5.1}{T\351cnicas}{chapter.5}% 85
+\BOOKMARK [1][-]{section.5.2}{Herramientas}{chapter.5}% 86
+\BOOKMARK [1][-]{section.5.3}{Revisiones}{chapter.5}% 87
+\BOOKMARK [2][-]{subsection.5.3.1}{Roles y responsabilidades}{section.5.3}% 88
+\BOOKMARK [3][-]{subsubsection.5.3.1.1}{Moderador}{subsection.5.3.1}% 89
+\BOOKMARK [3][-]{subsubsection.5.3.1.2}{Autor}{subsection.5.3.1}% 90
+\BOOKMARK [3][-]{subsubsection.5.3.1.3}{Presentador}{subsection.5.3.1}% 91
+\BOOKMARK [3][-]{subsubsection.5.3.1.4}{Inspector}{subsection.5.3.1}% 92
+\BOOKMARK [3][-]{subsubsection.5.3.1.5}{Secretario}{subsection.5.3.1}% 93
+\BOOKMARK [3][-]{subsubsection.5.3.1.6}{Observador}{subsection.5.3.1}% 94
+\BOOKMARK [2][-]{subsection.5.3.2}{Etapas de Revisi\363n}{section.5.3}% 95
+\BOOKMARK [3][-]{subsubsection.5.3.2.1}{Planificaci\363n}{subsection.5.3.2}% 96
+\BOOKMARK [3][-]{subsubsection.5.3.2.2}{Orientaci\363n \(opcional\)}{subsection.5.3.2}% 97
+\BOOKMARK [3][-]{subsubsection.5.3.2.3}{Preparaci\363n}{subsection.5.3.2}% 98
+\BOOKMARK [3][-]{subsubsection.5.3.2.4}{Inspecci\363n}{subsection.5.3.2}% 99
+\BOOKMARK [3][-]{subsubsection.5.3.2.5}{Rework}{subsection.5.3.2}% 100
+\BOOKMARK [3][-]{subsubsection.5.3.2.6}{Seguimiento}{subsection.5.3.2}% 101
+\BOOKMARK [2][-]{subsection.5.3.3}{Informe de revisi\363n}{section.5.3}% 102
+\BOOKMARK [1][-]{section.5.4}{Auditorias}{chapter.5}% 103
+\BOOKMARK [2][-]{subsection.5.4.1}{Roles y responsabilidades}{section.5.4}% 104
+\BOOKMARK [3][-]{subsubsection.5.4.1.1}{Iniciador}{subsection.5.4.1}% 105
+\BOOKMARK [3][-]{subsubsection.5.4.1.2}{Moderador \(L\355der del equipo auditor\)}{subsection.5.4.1}% 106
+\BOOKMARK [3][-]{subsubsection.5.4.1.3}{Auditores}{subsection.5.4.1}% 107
+\BOOKMARK [3][-]{subsubsection.5.4.1.4}{Instituci\363n auditada}{subsection.5.4.1}% 108
+\BOOKMARK [3][-]{subsubsection.5.4.1.5}{Secretario}{subsection.5.4.1}% 109
+\BOOKMARK [3][-]{subsubsection.5.4.1.6}{Nivel de gesti\363n}{subsection.5.4.1}% 110
+\BOOKMARK [2][-]{subsection.5.4.2}{Etapas de la auditoria}{section.5.4}% 111
+\BOOKMARK [3][-]{subsubsection.5.4.2.1}{Planificaci\363n}{subsection.5.4.2}% 112
+\BOOKMARK [3][-]{subsubsection.5.4.2.2}{Reuni\363n de Orientaci\363n}{subsection.5.4.2}% 113
+\BOOKMARK [3][-]{subsubsection.5.4.2.3}{Evaluaci\363n}{subsection.5.4.2}% 114
+\BOOKMARK [3][-]{subsubsection.5.4.2.4}{Seguimiento}{subsection.5.4.2}% 115
+\BOOKMARK [2][-]{subsection.5.4.3}{Informe de Auditoria}{section.5.4}% 116
+\BOOKMARK [1][-]{section.5.5}{Checklist}{chapter.5}% 117
+\BOOKMARK [0][-]{chapter.6}{Pruebas}{}% 118
+\BOOKMARK [1][-]{section.6.1}{Estructura de las pruebas}{chapter.6}% 119
+\BOOKMARK [2][-]{subsection.6.1.1}{Planificaci\363n}{section.6.1}% 120
+\BOOKMARK [2][-]{subsection.6.1.2}{Especificaci\363n}{section.6.1}% 121
+\BOOKMARK [2][-]{subsection.6.1.3}{Ejecuci\363n}{section.6.1}% 122
+\BOOKMARK [2][-]{subsection.6.1.4}{An\341lisis de resultados}{section.6.1}% 123
+\BOOKMARK [2][-]{subsection.6.1.5}{Completaci\363n}{section.6.1}% 124
+\BOOKMARK [1][-]{section.6.2}{Pruebas sobre el sistema Gerprin}{chapter.6}% 125
+\BOOKMARK [2][-]{subsection.6.2.1}{Pruebas unitarias}{section.6.2}% 126
+\BOOKMARK [3][-]{subsubsection.6.2.1.1}{Herramientas}{subsection.6.2.1}% 127
+\BOOKMARK [3][-]{subsubsection.6.2.1.2}{Documentaci\363n}{subsection.6.2.1}% 128
+\BOOKMARK [3][-]{subsubsection.6.2.1.3}{Ejemplo de prueba}{subsection.6.2.1}% 129
+\BOOKMARK [2][-]{subsection.6.2.2}{Pruebas de integraci\363n}{section.6.2}% 130
+\BOOKMARK [3][-]{subsubsection.6.2.2.1}{Herramientas}{subsection.6.2.2}% 131
+\BOOKMARK [3][-]{subsubsection.6.2.2.2}{Documentaci\363n}{subsection.6.2.2}% 132
+\BOOKMARK [3][-]{subsubsection.6.2.2.3}{Ejemplo de prueba}{subsection.6.2.2}% 133
+\BOOKMARK [2][-]{subsection.6.2.3}{Pruebas de sistema}{section.6.2}% 134
+\BOOKMARK [3][-]{subsubsection.6.2.3.1}{Documentaci\363n}{subsection.6.2.3}% 135
+\BOOKMARK [3][-]{subsubsection.6.2.3.2}{Ejemplo de prueba}{subsection.6.2.3}% 136
+\BOOKMARK [2][-]{subsection.6.2.4}{Pruebas de aceptaci\363n}{section.6.2}% 137
+\BOOKMARK [3][-]{subsubsection.6.2.4.1}{Documentaci\363n}{subsection.6.2.4}% 138
+\BOOKMARK [3][-]{subsubsection.6.2.4.2}{Ejemplo de prueba}{subsection.6.2.4}% 139
+\BOOKMARK [0][-]{chapter.7}{Conclusiones }{}% 140
+\BOOKMARK [0][-]{appendix.Alph1}{Anexos}{}% 141
+\BOOKMARK [1][-]{section.Alph1.1}{Informe de revisi\363n}{appendix.Alph1}% 142
+\BOOKMARK [1][-]{section.Alph1.2}{Informe de Auditoria}{appendix.Alph1}% 143
+\BOOKMARK [1][-]{section.Alph1.3}{Checklist}{appendix.Alph1}% 144
+\BOOKMARK [2][-]{subsection.Alph1.3.1}{Checklist por actividades del proceso de desarrollo evaluados por QA}{section.Alph1.3}% 145
+\BOOKMARK [2][-]{subsection.Alph1.3.2}{Checklist por actividades del proceso de desarrollo evaluados por QA}{section.Alph1.3}% 146
+\BOOKMARK [1][-]{section.Alph1.4}{Checklist del Equipo de Revisi\363n}{appendix.Alph1}% 147
+\BOOKMARK [1][-]{section.Alph1.5}{Checklist del Equipo de Auditoria}{appendix.Alph1}% 148
+\BOOKMARK [1][-]{section.Alph1.6}{Plantillas de pruebas}{appendix.Alph1}% 149

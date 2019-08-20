@@ -54,13 +54,13 @@ En la presente sección se establecerán los indicadores de cada uno de los atri
 
 \subsection{Fiabilidad}
 
-Es necesario que la información entregada por cualquiera de los distintos módulos que forman \emph{Gerprin} sea legible por los módulos restantes y de este modo no tener perdidas en la comunicación entre distintas plataformas. Las solicitudes y respuesta deben ser verídicas y corresponder a acciones reales desencadenadas por los actores de la aplicación.
+Es necesario que la información entregada por cualquiera de los distintos módulos que forman \textit{Gerprin} sea legible por los módulos restantes y de este modo no tener perdidas en la comunicación entre distintas plataformas. Las solicitudes y respuesta deben ser verídicas y corresponder a acciones reales desencadenadas por los actores de la aplicación.
 
 Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
 
-Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \emph{API} de \emph{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \emph{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \emph{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \emph{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
+Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \textit{API} de \textit{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \textit{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \textit{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \textit{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
 
-Por otro lado, la aplicación móvil y la \emph{API} desarrollada, deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
+Por otro lado, la aplicación móvil y la \textit{API} desarrollada, deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
 
 \subsubsection{Objetivos cuantificables}
 
@@ -68,7 +68,7 @@ Por otro lado, la aplicación móvil y la \emph{API} desarrollada, deben contar 
 	\item
 	Funcionalidades de la aplicación móvil sin errores.
 	\item
-	Servicios entregados por la \emph{API} sin errores.
+	Servicios entregados por la \textit{API} sin errores.
 	\item
 	Envió de posición de forma precisa e intervalos regulares sin errores.
 	\item
@@ -86,7 +86,7 @@ Por otro lado, la aplicación móvil y la \emph{API} desarrollada, deben contar 
     	\hline
     	\hline
     	Funcionalidades de la aplicación móvil sin errores. & 95\% de efectividad sin errores. \\ \hline
-		Servicios entregados por la \emph{API} sin errores. & 95\% de respuestas sin errores. \\ \hline
+		Servicios entregados por la \textit{API} sin errores. & 95\% de respuestas sin errores. \\ \hline
 		Envió de posición de forma precisa e intervalos regulares sin errores. & 75\% de posiciones almacenadas con un error de ±20 metros. \\ \hline
 		Funcionalidad de activación y desactivación de relé de forma remota sin errores. & 95\% de efectividad. \\
         \hline
@@ -103,7 +103,7 @@ Para esto es necesario que la interfaz aplique colores y símbolos coherentes co
 
 Dado que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
 
-Considerando que el primer \emph{iPhone} contaba con un tamaño de pantalla de 3,5 pulgadas y que estas van en aumento, se considerará esta como el tamaño mínimo de pantalla.
+Considerando que el primer \textit{iPhone} contaba con un tamaño de pantalla de 3,5 pulgadas y que estas van en aumento, se considerará esta como el tamaño mínimo de pantalla.
 
 Respecto a la resolución mínima de pantalla, se puede apreciar en el gráfico \ref{chart:Screen Resolution} que aproximadamente el 74\% de los usuarios de dispositivos móviles en chile emplean una resolución mayor a 360 x 640 píxeles.
 
@@ -183,7 +183,7 @@ En vista de la existencia de distintas plataformas móviles, es necesario asegur
 	\end{bchart}
 \end{figure}
 
-Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \emph{Android} e \emph{iOS}, que en conjunto corresponden al 95,26\% del mercado. Teniendo en cuenta estas cifras y el amplio segmento que abarcan estos dos sistemas, el desarrollo de \emph{Gerprin} se concentrará en dichas plataformas. Para el caso de \emph{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
+Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \textit{Android} e \textit{iOS}, que en conjunto corresponden al 95,26\% del mercado. Teniendo en cuenta estas cifras y el amplio segmento que abarcan estos dos sistemas, el desarrollo de \textit{Gerprin} se concentrará en dichas plataformas. Para el caso de \textit{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
 
 \begin{figure}[H]
 	\centering
@@ -208,9 +208,9 @@ Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populare
 	\end{bchart}
 \end{figure}
 
-Si bien, corresponde a un segmento importante el uso de \emph{Android KitKat} (10\%) es desde la versión de la \emph{API} de \emph{Android} 21, empleada por google en el desarrollo de \emph{Android Lollipop}, que se integra nativamente \emph{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considerá el desarrollo enfocado en sistemas \emph{Android} 5.0 o mayores.
+Si bien, corresponde a un segmento importante el uso de \textit{Android KitKat} (10\%) es desde la versión de la \textit{API} de \textit{Android} 21, empleada por google en el desarrollo de \textit{Android Lollipop}, que se integra nativamente \textit{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considerá el desarrollo enfocado en sistemas \textit{Android} 5.0 o mayores.
 
-Por otro lado, las versiones de \emph{iOS} y el porcentaje de su participación en el mercado se muestran en el gráfico \ref{chart:iOS Version}.
+Por otro lado, las versiones de \textit{iOS} y el porcentaje de su participación en el mercado se muestran en el gráfico \ref{chart:iOS Version}.
 
 \begin{figure}[H]
 	\centering
@@ -234,15 +234,15 @@ Por otro lado, las versiones de \emph{iOS} y el porcentaje de su participación 
 	\end{bchart}
 \end{figure}
 
-En base al porcentaje de uso de las distintas versiones de \emph{iOS} del gráfico \ref{chart:iOS Version}, se considera un desarrollo para la versión 10.2 o superiores.
+En base al porcentaje de uso de las distintas versiones de \textit{iOS} del gráfico \ref{chart:iOS Version}, se considera un desarrollo para la versión 10.2 o superiores.
 
 \subsubsection{Objetivos cuantificables}
 
 \begin{itemize}
 	\item
-	Correcta ejecución en una versión minima de \emph{Android}.
+	Correcta ejecución en una versión minima de \textit{Android}.
 	\item
-	Correcta ejecución en una versión minima de \emph{iOS}.
+	Correcta ejecución en una versión minima de \textit{iOS}.
 \end{itemize}
 
 \subsubsection{Criterios de Validación}
@@ -255,17 +255,17 @@ En base al porcentaje de uso de las distintas versiones de \emph{iOS} del gráfi
         \textbf{Criterio} &  \textbf{Medición}\\
     	\hline
     	\hline
-    	versión \emph{Android}. & 5.0 o superior. \\ \hline
-		versión \emph{iOS}.  & 10.2 o superiores. \\ 
+    	versión \textit{Android}. & 5.0 o superior. \\ \hline
+		versión \textit{iOS}.  & 10.2 o superiores. \\ 
         \hline
     \end{tabular}
 \end{table}
 
 \subsection{Temporización}
 
-Se considera la velocidad de conexión del sistema a bordo de 9,6 kbps correspondiente a tecnología \emph{GSM} y una de hasta 2 mbps para una red \emph{3G} para la aplicación móvil, como la velocidad necesaria para un óptimo funcionamiento del sistema.
+Se considera la velocidad de conexión del sistema a bordo de 9,6 kbps correspondiente a tecnología \textit{GSM} y una de hasta 2 mbps para una red \textit{3G} para la aplicación móvil, como la velocidad necesaria para un óptimo funcionamiento del sistema.
 
-Debido a que \emph{Gerprin} es una aplicación basada en servicios, es necesario que estos tengan una baja taza de espera al consultar al módulo que contiene la \emph{API}.
+Debido a que \textit{Gerprin} es una aplicación basada en servicios, es necesario que estos tengan una baja taza de espera al consultar al módulo que contiene la \textit{API}.
 
 \subsubsection{Objetivos cuantificables}
 
@@ -287,7 +287,7 @@ Debido a que \emph{Gerprin} es una aplicación basada en servicios, es necesario
     	\hline
     	\hline
     	Tiempo de respuesta.  & inferior a 3 segundos. \\ \hline
-		Compresión \emph{gzip}   & Si \\ 
+		Compresión \textit{gzip}   & Si \\ 
         \hline
     \end{tabular}
 \end{table}
@@ -295,13 +295,13 @@ Los criterios de validación se basan en la experiencia de aplicaciones similare
 
 \subsection{Soportar alta carga}
 
-Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \emph{API}, es de suma importancia que cuente con el soporte necesario para responder a una gran cantidad de solicitudes en un corto periodo de tiempo.
+Debido al alto tráfico del servidor central de la aplicación y que esta basa su arquitectura en servicios provistos por una \textit{API}, es de suma importancia que cuente con el soporte necesario para responder a una gran cantidad de solicitudes en un corto periodo de tiempo.
 
-Mediante herramientas como la consola de \emph{Google Play} o \emph{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, número de terminales con la aplicación instalada, entre otros factores.
+Mediante herramientas como la consola de \textit{Google Play} o \textit{ Google Analitycs} se pueden obtener estadísticas del uso del sistema, tales como tiempo medio de navegación, número de terminales con la aplicación instalada, entre otros factores.
 
 Esta información se emplea para calcular el promedio de usuarios conectados y se estima, en base a aplicaciones similares, que cada uno de ellos realizará una consulta al servidor cada 2 segundos.
 
-Es importante considerar que el número de usuarios varia dependiendo de la popularidad de \emph{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
+Es importante considerar que el número de usuarios varia dependiendo de la popularidad de \textit{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
 
 
 \subsubsection{Objetivos cuantificables}
@@ -330,7 +330,7 @@ Los criterios de validación se basan en la experiencia de aplicaciones similare
 
 Debido a la importancia de la aplicación es completamente necesario que esta se encuentre disponible el mayor tiempo posible.
 
-Los usuarios deben tener plena confianza en que la plataforma se encuentra disponible y enviará las notificaciones \emph{push} si el sistema detecta un intento de robo, ya sea un intento de encender el vehículo por un usuario no autorizado o si este se desplazó sin autorización.
+Los usuarios deben tener plena confianza en que la plataforma se encuentra disponible y enviará las notificaciones \textit{push} si el sistema detecta un intento de robo, ya sea un intento de encender el vehículo por un usuario no autorizado o si este se desplazó sin autorización.
 
 Además, debe estar disponible en casos de ser necesario desactivar el cortacorriente de forma remota sin una huella digital cuando ocurra una emergencia.
 
@@ -340,7 +340,7 @@ Basado en criterios de experiencias en el desarrollo de aplicaciones similares, 
 
 \subsubsection{Clúster de servidores}
 
-La aplicación debe encontrarse en un \emph{Cluster} de servidores, es decir, debe encontrarse en varios computadores respondiendo las solicitudes como uno solo. Esto, con el objeto de dividir la carga de procesamiento de los servidores, evitar la falta de disponibilidad por fallas de hardware y permitir escalar la cantidad de carga que puede aguantar el servicio de forma rápida y fácil. Por esta razón el sistema deberá contar con un mínimo de dos instancias de máquinas con la posibilidad de aumentar dicha cantidad según la demanda.
+La aplicación debe encontrarse en un \textit{Cluster} de servidores, es decir, debe encontrarse en varios computadores respondiendo las solicitudes como uno solo. Esto, con el objeto de dividir la carga de procesamiento de los servidores, evitar la falta de disponibilidad por fallas de hardware y permitir escalar la cantidad de carga que puede aguantar el servicio de forma rápida y fácil. Por esta razón el sistema deberá contar con un mínimo de dos instancias de máquinas con la posibilidad de aumentar dicha cantidad según la demanda.
 
 \subsubsection{Objetivos cuantificables}
 
@@ -371,14 +371,14 @@ Los criterios de validación se basan en la experiencia de aplicaciones similare
 
 Debido a la naturaleza del sistema y la información sensible que esta puede manejar, es necesario implementar roles para los usuarios con el propósito de establecer un acceso consistente y seguro a la información contenida en la plataforma. 
 
-Para implementar lo anterior es necesario establecer cuentas de usuarios protegidas por contraseñas que deben ser almacenadas de forma encriptada y un token o \emph{API Key} que permita realizar consultas seguras a la API del sistema.
+Para implementar lo anterior es necesario establecer cuentas de usuarios protegidas por contraseñas que deben ser almacenadas de forma encriptada y un token o \textit{API Key} que permita realizar consultas seguras a la API del sistema.
 
-Es necesario, además, contemplar ataques de tipo \emph{SQL injection}\footnote{http://www.revistasbolivianas.org.bo/pdf/rits/n8/n8a17.pdf}  y de fuerza bruta.
+Es necesario, además, contemplar ataques de tipo \textit{SQL injection}\footnote{http://www.revistasbolivianas.org.bo/pdf/rits/n8/n8a17.pdf}  y de fuerza bruta.
 
 
 \subsubsection{Limitar puntos de acceso al servidor}
 
-Es necesario establecer la arquitectura del servidor a usar. Se empleará un servidor \emph{AWS EC2} y los puertos abiertos son: 
+Es necesario establecer la arquitectura del servidor a usar. Se empleará un servidor \textit{AWS EC2} y los puertos abiertos son: 
 \begin{itemize}
 	\item
 	Conexión SSH: puerto 22.
@@ -435,15 +435,15 @@ Para lograr lo anterior es necesario plantear una serie de puntos que permitan a
 
 Lo primero que debe ser tomado en cuenta es la creación del sistema de forma modular. Esto se logra encapsulando funciones, para que trabajen de manera privada y que solamente puedan ser llamadas por otras funciones sin modificar la forma en que realizan sus procesos. De este modo, se pueden modificar de forma independiente. 
 
-Para este desarrollo, se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \emph{Android} y \emph{iOS}, el segundo módulo es una \emph{API} instalada en un servidor \emph{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
+Para este desarrollo, se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \textit{Android} y \textit{iOS}, el segundo módulo es una \textit{API} instalada en un servidor \textit{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
 
 \paragraph{Encapsulamiento de los módulos\\}
 
-Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizontal de la arquitectura del servidor. La escalabilidad vertical permite aumentar la capacidad física de almacenamiento y procesamiento, aumentando las características del hardware donde se encuentra el sistema. Mientras que la horizontal permite aumentar el número de nodos que conforman el \emph{Cluster} del servidor. Para el caso de \emph{Gerprin}, \emph{AWS EC2} permite la rápida implementación de ambos métodos.
+Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizontal de la arquitectura del servidor. La escalabilidad vertical permite aumentar la capacidad física de almacenamiento y procesamiento, aumentando las características del hardware donde se encuentra el sistema. Mientras que la horizontal permite aumentar el número de nodos que conforman el \textit{Cluster} del servidor. Para el caso de \textit{Gerprin}, \textit{AWS EC2} permite la rápida implementación de ambos métodos.
 
 \subsection{Mantenibilidad}
 
-\emph{ISO/IEC 25010}\footnote{I. S. Organization, “ISO/IEC 25010,” in Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models, ed, 2011} define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \emph{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
+\textit{ISO/IEC 25010}\footnote{I. S. Organization, “ISO/IEC 25010,” in Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models, ed, 2011} define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \textit{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
 
 \subsubsection{Objetivos cuantificables}
 
@@ -463,4 +463,4 @@ Es necesaria la existencia de comentarios dentro del código fuente del programa
 
 \paragraph{Estandarización del nombre\\}
 
-Otra buena práctica para facilitar el mantenimiento es la estandarización de nombres siguiendo la convención que existe para este propósito para \emph{PHP}\footnote{http://pear.php.net/manual/en/standards.naming.php}.
+Otra buena práctica para facilitar el mantenimiento es la estandarización de nombres siguiendo la convención que existe para este propósito para \textit{PHP}\footnote{http://pear.php.net/manual/en/standards.naming.php}.
