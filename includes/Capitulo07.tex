@@ -2,15 +2,43 @@
 
 \chapter{Conclusiones }
 
-En la presente documento, se aborda el aseguramiento de la calidad de \textit{Gerprin}, sin embargo, bajo un primer análisis se puede apreciar que es imposible asegurar objetivamente que un sistema posee una característica tan abstracta como el concepto de “calidad”. Para poder asegurar la calidad de un sistema es fundamentar definir los indicadores que al ser cumplidos permiten definir \textit{Gerprin} como un software de calidad.
+En la presente memoria, se aborda el aseguramiento de la calidad de \textit{Gerprin}, sin embargo, para poder considerar el sistema como un elemento de calidad competitivo en el mercado debemos definir indicadores a cumplir que permitan de forma cuantitativa determinar el cumplimiento de los atributos no funcionales. 
+La elección de los atributos de calidad es fundamental para el aseguramiento de esta. Pues son estos, que, mediante su cumplimiento, definirán la calidad. En la selección atributos no funcionales se determinan las características que debe tener el sistema e indicadores cuantitativos que permiten determinar su cumplimiento. En la calidad de software se destaca la clasificación del modelo \textit{ISO 9126} que divide en 6 grandes grupos las características que debe tener un software para considerarse que es de “calidad”. En el presente documento se consideraron dichos elementos, sin embargo, en la sección de requisitos no funcionales, se destacó un grupo reducido de indicadores sobre el resto debido a la experiencia en el desarrollo de software similares, donde primaban los atributos de calidad seleccionados por sobre otros. 
 
-La elección de los requisitos no funcionales y de los atributos de calidad es fundamental para el aseguramiento de esta, pues son estos, que, mediante su cumplimiento, definirán la calidad. En la selección de los indicadores que marcan la calidad de software se destaca la clasificación del modelo ISO 9126 que clasifica en 6 grandes grupos las características que debe tener un software para considerarse que es de “calidad”. En el presente documento se consideraron dichos elementos, sin embargo, en la sección de requisitos no funcionales, se destacó un grupo reducido de indicadores sobre el resto debido a la experiencia en el desarrollo de software similares, donde primaban los atributos de calidad seleccionados por sobre otros.
+A continuación, se detallan las categorías definidas en el estándar \textit{ISO 9126} y los motivos de acotar los requisitos no funcionales a los elegidos en la segunda sección del presente documento. 
 
-Más allá de definir el concepto de calidad, al cual se busca llegar, es necesario establecer y definir un proceso por el cual se logre alcanzar los estándares impuestos. Por este motivo la segunda etapa de un plan de aseguramiento de calidad es definir las metodologías que serán empleadas para el desarrollo del software. 
+\textbf{Fiabilidad}
 
-Como se hizo énfasis, \textit{Gerprin} es un sistema que ya se encuentra desarrollado. En esta ocasión se apunta a una nueva versión, sin desconocer la actual. Por este motivo se pueden considerar metodologías menos ortodoxas, como el concepto de diseño emergente, que fue descrito en la sección correspondiente. Esta técnica corresponde a una característica de la metodología de \textit{XP} que resalta por su gran flexibilidad en el desarrollo, sobre esto se aplica \textit{TDD} que permite la temprana detección de errores, que sumado a la flexibilidad de \textit{XP} permiten una pronta solución y evolución del software.
+Mientras que para el modelo \textit{ISO 9126} fiabilidad es una clasificación que engloba elementos tales como “madurez”, “tolerancia a fallos”, “capacidad de recuperación”, entre otros. En el presente documento se acota a la capacidad de responder ante acciones del usuario; Se define la cantidad de solicitudes por periodo de tiempo definido y porcentaje de tiempo que la aplicación puede encontrarse offline. Esto como las áreas necesarias a ser medidas en un sistema alojado en AWS y con una aplicación móvil en las tiendas de aplicaciones.
 
-Asimismo, se implementó un proceso de \textit{SQA} basado en lo descrito en \citet{web00} que clasifica a las organizaciones que utilizan \textit{SQA} de alguna u otra forma en el desarrollo de software según cuatro niveles. Los niveles de madurez se detallan en base a los procesos y subprocesos que se implementan. Para el sistema aquí presentado se internalizaron los estándares, procesos y actividades recomendadas hasta el segundo nivel, que representa el núcleo del aseguramiento de calidad. En el desarrollo de \textit{Gerprin} se busca simplificar los procesos dejando de lado largas documentaciones o procesos que aumentan los tiempos de desarrollo. 
+\textbf{Usabilidad}
+
+ Al igual que en puntos anteriores, es necesario acotar el concepto de usabilidad a adaptarse a distintos dispositivos y tamaños de pantalla. Lo anterior debido a que la aplicación se encuentra desarrollada y se adaptaría a pantallas y dispositivos más actuales.
+
+\textbf{Eficiencia}
+
+Para la medición de la eficiencia se considera como único recurso del sistema a ser medido como el tiempo y la exigencia de ocupar compresión para el envío de paquetes de información, esto debido a lo variable que puede resultar el uso de otros recursos de hardware considerando cantidad de usuarios y el tiempo que lleve el sistema en ambiente productivo (a mayor tiempo aumenta cantidad de log y tamaño de base de datos entre otros elementos).
+
+\textbf{Funcionalidad}
+En el proceso de desarrollo de \textit{Gerprin} se definen los requisitos funcionales que este debe cumplir, comprobándose empíricamente, mediante el desarrollo, el cumplimiento de estos. Por este motivo, se reduce los requisitos no funcionales asociados a la categoría de funcionalidad a la seguridad que este presente en el sistema.
+
+\textbf{Mantenibilidad}
+
+La categoría de mantenibilidad es traducida mediante los estándares de desarrollo de los distintos lenguajes a utilizar.
+
+\textbf{Portabilidad}
+
+Debido a la naturaleza del sistema y como este es instalado y manejado en ambiente productivo se omite la categoría de portabilidad y sus requisitos no funcionales asociados.
+
+Más allá de definir el concepto de calidad, al cual se busca llegar, es necesario establecer y definir un proceso por el cual se logre alcanzar los estándares impuestos. Por este motivo la segunda etapa de un plan de aseguramiento de calidad es definir las metodologías que serán empleadas para el desarrollo del software.
+
+Como se hizo énfasis, \textit{Gerprin} es un sistema que ya se encuentra desarrollado. En esta ocasión se apunta a una nueva versión, sin desconocer la actual. Por este motivo se pueden considerar metodologías con diseño emergente, que es descrito en la sección correspondiente. Esta técnica corresponde a una característica de la metodología de XP y TDD, permitiendo un desarrollo flexible.
+
+Cada uno de los procesos que componen las etapas del desarrollo de software producen artefactos que deben ser inspeccionados en búsqueda de posibles errores y validar que cumplan con los atributos no funcionales. En la sección de anexos se puede encontrar una plantilla del informe de revisiones obtenida de \citet{web00} y adaptada en base a los entregables ya definidos, se modifican las etapas del desarrollo de software para coincidir con la metodología utilizada. En caso de ser necesario se puede realizar una solicitud de auditoria que permite un análisis comparando el estado actual de los productos de trabajo con el estado reportado, mediante la evaluación del cumplimiento de normas, estándares y otros acuerdos existentes, entregando mayor información sobre errores de procesos y de artefactos. 
+
+Otra herramienta importante en el aseguramiento de calidad de los distintos artefactos, son los checklist, que permiten confirmar el cumplimiento de sub procesos dentro de las distintas etapas del desarrollo de software o características que deben tener los artefactos generados en dichos procesos. Al igual que las plantillas de informes de revisiones y auditorias, se adaptaron en base a las etapas y artefactos que deben ser generados basándose en la metodología seleccionada.
+
+En le presente documento fue implementado un proceso de SQA basado en lo descrito en \citet{web00} que clasifica a las organizaciones que utilizan SQA en el desarrollo de software según cuatro niveles. Los niveles de madurez se detallan en base a los procesos y subprocesos que se implementan. Para el sistema aquí presentado se internalizaron los estándares, procesos y actividades recomendadas hasta el segundo nivel, que representa el núcleo del aseguramiento de calidad. En el desarrollo de \textit{Gerprin} se busca simplificar los procesos dejado de lado largas documentaciones o procesos que aumentan los tiempos de desarrollo.
 
 El primer nivel de madurez se integró reconociendo la importancia del proceso de \textit{SQA} y su integración al desarrollo del software. Mediante el presente documento se definen las acciones que procederán a integrar el proceso, es decir, de adoptan las revisiones y auditorias, que mediante checklist mantienen un control sobre la adherencia de los productos y procesos a los estándares y procedimientos establecidos.
 

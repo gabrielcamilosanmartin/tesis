@@ -58,7 +58,7 @@ Es necesario que la información entregada por cualquiera de los distintos módu
 
 Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
 
-Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \textit{API} de \textit{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \textit{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \textit{UDP}\footnote{https://www.ietf.org/rfc/rfc768.txt} , a diferencia del resto de las funciones del sistema a bordo que deben emplear \textit{TCP}\footnote{https://tools.ietf.org/html/rfc793}.
+Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \textit{API} de \textit{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \textit{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \textit{UDP}, a diferencia del resto de las funciones del sistema a bordo que deben emplear \textit{TCP}.
 
 Por otro lado, la aplicación móvil y la \textit{API} desarrollada, deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
 
@@ -373,7 +373,7 @@ Debido a la naturaleza del sistema y la información sensible que esta puede man
 
 Para implementar lo anterior es necesario establecer cuentas de usuarios protegidas por contraseñas que deben ser almacenadas de forma encriptada y un token o \textit{API Key} que permita realizar consultas seguras a la API del sistema.
 
-Es necesario, además, contemplar ataques de tipo \textit{SQL injection}\footnote{http://www.revistasbolivianas.org.bo/pdf/rits/n8/n8a17.pdf}  y de fuerza bruta.
+Es necesario, además, contemplar ataques de tipo \textit{SQL injection}  y de fuerza bruta.
 
 
 \subsubsection{Limitar puntos de acceso al servidor}
@@ -443,7 +443,7 @@ Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizon
 
 \subsection{Mantenibilidad}
 
-\textit{ISO/IEC 25010}\footnote{I. S. Organization, “ISO/IEC 25010,” in Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - System and Software Quality Models, ed, 2011} define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \textit{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
+segun \citet{pdf04} se define la mantenibilidad como el grado de efectividad o eficiencia con la que un producto o sistema puede ser modificado. Para logar reducir el trabajo de mantenibilidad del \textit{software} existen una variedad de atributos que pueden ser integrados para facilitar la labor. 
 
 \subsubsection{Objetivos cuantificables}
 
@@ -463,4 +463,4 @@ Es necesaria la existencia de comentarios dentro del código fuente del programa
 
 \paragraph{Estandarización del nombre\\}
 
-Otra buena práctica para facilitar el mantenimiento es la estandarización de nombres siguiendo la convención que existe para este propósito para \textit{PHP}\footnote{http://pear.php.net/manual/en/standards.naming.php}.
+Otra buena práctica para facilitar el mantenimiento es la estandarización de nombres siguiendo la convención que existe para este propósito para \textit{PHP}, estas se pueden encontrar en \citet{web01}.
