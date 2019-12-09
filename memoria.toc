@@ -1,217 +1,217 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}% 
-\contentsline {section}{\numberline {1.1}Resumen del proyecto}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}Prop\IeC {\'o}sito}{2}{section.1.2}% 
-\contentsline {section}{\numberline {1.3}Alcance}{2}{section.1.3}% 
-\contentsline {chapter}{\numberline {2}Requisitos no funcionales}{3}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}Definici\IeC {\'o}n de atributos de calidad}{3}{section.2.1}% 
-\contentsline {section}{\numberline {2.2}Objetivos Cuantificables}{4}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}Fiabilidad}{4}{subsection.2.2.1}% 
-\contentsline {subsubsection}{\numberline {2.2.1.1}Objetivos cuantificables}{4}{subsubsection.2.2.1.1}% 
-\contentsline {subsubsection}{\numberline {2.2.1.2}Criterios de medici\IeC {\'o}n.}{4}{subsubsection.2.2.1.2}% 
-\contentsline {subsection}{\numberline {2.2.2}Usabilidad}{5}{subsection.2.2.2}% 
-\contentsline {subsubsection}{\numberline {2.2.2.1}Objetivos cuantificables}{6}{subsubsection.2.2.2.1}% 
-\contentsline {subsubsection}{\numberline {2.2.2.2}Criterios de Validaci\IeC {\'o}n}{6}{subsubsection.2.2.2.2}% 
-\contentsline {subsection}{\numberline {2.2.3}Adapabilidad}{6}{subsection.2.2.3}% 
-\contentsline {subsubsection}{\numberline {2.2.3.1}Objetivos cuantificables}{8}{subsubsection.2.2.3.1}% 
-\contentsline {subsubsection}{\numberline {2.2.3.2}Criterios de Validaci\IeC {\'o}n}{8}{subsubsection.2.2.3.2}% 
-\contentsline {subsection}{\numberline {2.2.4}Temporizaci\IeC {\'o}n}{8}{subsection.2.2.4}% 
-\contentsline {subsubsection}{\numberline {2.2.4.1}Objetivos cuantificables}{8}{subsubsection.2.2.4.1}% 
-\contentsline {subsubsection}{\numberline {2.2.4.2}Criterios de Validaci\IeC {\'o}n}{8}{subsubsection.2.2.4.2}% 
-\contentsline {subsection}{\numberline {2.2.5}Soportar alta carga}{8}{subsection.2.2.5}% 
-\contentsline {subsubsection}{\numberline {2.2.5.1}Objetivos cuantificables}{9}{subsubsection.2.2.5.1}% 
-\contentsline {subsubsection}{\numberline {2.2.5.2}Criterios de Validaci\IeC {\'o}n}{9}{subsubsection.2.2.5.2}% 
-\contentsline {subsection}{\numberline {2.2.6}Disponibilidad}{9}{subsection.2.2.6}% 
-\contentsline {subsubsection}{\numberline {2.2.6.1}Cl\IeC {\'u}ster de servidores}{9}{subsubsection.2.2.6.1}% 
-\contentsline {subsubsection}{\numberline {2.2.6.2}Objetivos cuantificables}{10}{subsubsection.2.2.6.2}% 
-\contentsline {subsubsection}{\numberline {2.2.6.3}Criterios de Validaci\IeC {\'o}n}{10}{subsubsection.2.2.6.3}% 
-\contentsline {subsection}{\numberline {2.2.7}Seguridad}{10}{subsection.2.2.7}% 
-\contentsline {subsubsection}{\numberline {2.2.7.1}Limitar puntos de acceso al servidor}{10}{subsubsection.2.2.7.1}% 
-\contentsline {subsubsection}{\numberline {2.2.7.2}Objetivos cuantificables}{10}{subsubsection.2.2.7.2}% 
-\contentsline {subsubsection}{\numberline {2.2.7.3}Criterios de Validaci\IeC {\'o}n}{11}{subsubsection.2.2.7.3}% 
-\contentsline {subsection}{\numberline {2.2.8}Escalabilidad}{11}{subsection.2.2.8}% 
-\contentsline {subsubsection}{\numberline {2.2.8.1}Objetivos cuantificables}{11}{subsubsection.2.2.8.1}% 
-\contentsline {subsubsection}{\numberline {2.2.8.2}Criterios de Validaci\IeC {\'o}n}{11}{subsubsection.2.2.8.2}% 
-\contentsline {paragraph}{Encapsulamiento de los m\IeC {\'o}dulos\\}{11}{paragraph*.16}% 
-\contentsline {paragraph}{Encapsulamiento de los m\IeC {\'o}dulos\\}{11}{paragraph*.17}% 
-\contentsline {subsection}{\numberline {2.2.9}Mantenibilidad}{12}{subsection.2.2.9}% 
-\contentsline {subsubsection}{\numberline {2.2.9.1}Objetivos cuantificables}{12}{subsubsection.2.2.9.1}% 
-\contentsline {subsubsection}{\numberline {2.2.9.2}Criterios de Validaci\IeC {\'o}n}{12}{subsubsection.2.2.9.2}% 
-\contentsline {paragraph}{Comentarios en el c\IeC {\'o}digo fuente\\}{12}{paragraph*.18}% 
-\contentsline {paragraph}{Estandarizaci\IeC {\'o}n del nombre\\}{12}{paragraph*.19}% 
-\contentsline {chapter}{\numberline {3}Modelo de desarrollo}{13}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}Elecci\IeC {\'o}n del modelo}{13}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}Definici\IeC {\'o}n de actividades}{14}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}Exploraci\IeC {\'o}n}{15}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}Planificaci\IeC {\'o}n de las entregas}{15}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}Iteraciones}{15}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}Integraci\IeC {\'o}n y pruebas}{15}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}Aceptaci\IeC {\'o}n y entrega}{16}{subsection.3.2.5}% 
-\contentsline {subsection}{\numberline {3.2.6}Muerte del proyecto}{16}{subsection.3.2.6}% 
-\contentsline {section}{\numberline {3.3}Productos de Trabajo}{16}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}Especificaci\IeC {\'o}n de Requerimientos}{16}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}Planificaci\IeC {\'o}n de proyecto}{17}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}Plan de pruebas}{18}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}Especificaci\IeC {\'o}n del Sistema}{19}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}Plan de Aseguramiento de Calidad (\textit {SQA})}{19}{subsection.3.3.5}% 
-\contentsline {subsection}{\numberline {3.3.6}Manual de usuario}{20}{subsection.3.3.6}% 
-\contentsline {section}{\numberline {3.4}Hitos del desarrollo (Atributos de Calidad)}{21}{section.3.4}% 
-\contentsline {subsection}{\numberline {3.4.1}Por actividades}{21}{subsection.3.4.1}% 
-\contentsline {subsection}{\numberline {3.4.2}Por producto}{22}{subsection.3.4.2}% 
-\contentsline {section}{\numberline {3.5}Puntos de revisi\IeC {\'o}n}{22}{section.3.5}% 
-\contentsline {chapter}{\numberline {4}Gestion de calidad}{25}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}Equipo de trabajo}{25}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}Recursos}{26}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}Personal}{26}{subsection.4.2.1}% 
-\contentsline {subsubsection}{\numberline {4.2.1.1}Gerente T\IeC {\'e}cnico}{26}{subsubsection.4.2.1.1}% 
-\contentsline {subsubsection}{\numberline {4.2.1.2}Unidad \textit {SQA}}{26}{subsubsection.4.2.1.2}% 
-\contentsline {subsubsection}{\numberline {4.2.1.3}Unidad \textit {SCM}}{26}{subsubsection.4.2.1.3}% 
-\contentsline {subsubsection}{\numberline {4.2.1.4}Jefe de Proyecto}{26}{subsubsection.4.2.1.4}% 
-\contentsline {subsubsection}{\numberline {4.2.1.5}Desarrolladores \textit {Front-End}, Desarrolladores \textit {Back-End} y Soporte y mantenimiento}{27}{subsubsection.4.2.1.5}% 
-\contentsline {subsection}{\numberline {4.2.2}Infraestructura}{27}{subsection.4.2.2}% 
-\contentsline {subsubsection}{\numberline {4.2.2.1}Oficina}{27}{subsubsection.4.2.2.1}% 
-\contentsline {subsubsection}{\numberline {4.2.2.2}Equipamiento de trabajo}{28}{subsubsection.4.2.2.2}% 
-\contentsline {subsection}{\numberline {4.2.3}Actividades}{28}{subsection.4.2.3}% 
-\contentsline {subsubsection}{\numberline {4.2.3.1}Evaluaci\IeC {\'o}n de la selecci\IeC {\'o}n de los productos de trabajo}{28}{subsubsection.4.2.3.1}% 
-\contentsline {subsubsection}{\numberline {4.2.3.2}Evaluaci\IeC {\'o}n de las herramientas}{28}{subsubsection.4.2.3.2}% 
-\contentsline {subsubsection}{\numberline {4.2.3.3}Evaluaci\IeC {\'o}n de la planificaci\IeC {\'o}n y el monitoreo del proyecto}{28}{subsubsection.4.2.3.3}% 
-\contentsline {subsubsection}{\numberline {4.2.3.4}Evaluaci\IeC {\'o}n de la especificaci\IeC {\'o}n de requerimientos}{29}{subsubsection.4.2.3.4}% 
-\contentsline {subsubsection}{\numberline {4.2.3.5}Evaluaci\IeC {\'o}n del dise\IeC {\~n}o}{29}{subsubsection.4.2.3.5}% 
-\contentsline {subsubsection}{\numberline {4.2.3.6}Evaluaci\IeC {\'o}n de la implementaci\IeC {\'o}n y de la prueba de unidad}{29}{subsubsection.4.2.3.6}% 
-\contentsline {subsubsection}{\numberline {4.2.3.7}Evaluaci\IeC {\'o}n de la integraci\IeC {\'o}n y prueba}{29}{subsubsection.4.2.3.7}% 
-\contentsline {subsubsection}{\numberline {4.2.3.8}Evaluaci\IeC {\'o}n del producto antes de su liberaci\IeC {\'o}n}{30}{subsubsection.4.2.3.8}% 
-\contentsline {subsubsection}{\numberline {4.2.3.9}Evaluaci\IeC {\'o}n del proceso de revisi\IeC {\'o}n}{30}{subsubsection.4.2.3.9}% 
-\contentsline {subsubsection}{\numberline {4.2.3.10}Evaluaci\IeC {\'o}n de las acciones correctivas}{30}{subsubsection.4.2.3.10}% 
-\contentsline {subsubsection}{\numberline {4.2.3.11}Evaluaci\IeC {\'o}n del proceso de \textit {SCM}}{30}{subsubsection.4.2.3.11}% 
-\contentsline {subsubsection}{\numberline {4.2.3.12}Verificar la implementaci\IeC {\'o}n de los procesos}{30}{subsubsection.4.2.3.12}% 
-\contentsline {subsubsection}{\numberline {4.2.3.13}Establecer las auditor\IeC {\'\i }as}{30}{subsubsection.4.2.3.13}% 
-\contentsline {subsubsection}{\numberline {4.2.3.14}Responsabilidades}{30}{subsubsection.4.2.3.14}% 
-\contentsline {chapter}{\numberline {5}Herramientas, t\IeC {\'e}cnicas y metodolog\IeC {\'\i }as}{33}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}T\IeC {\'e}cnicas}{33}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}Herramientas}{33}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}Revisiones}{34}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}Roles y responsabilidades}{34}{subsection.5.3.1}% 
-\contentsline {subsubsection}{\numberline {5.3.1.1}Moderador}{34}{subsubsection.5.3.1.1}% 
-\contentsline {subsubsection}{\numberline {5.3.1.2}Autor}{34}{subsubsection.5.3.1.2}% 
-\contentsline {subsubsection}{\numberline {5.3.1.3}Presentador}{34}{subsubsection.5.3.1.3}% 
-\contentsline {subsubsection}{\numberline {5.3.1.4}Inspector}{34}{subsubsection.5.3.1.4}% 
-\contentsline {subsubsection}{\numberline {5.3.1.5}Secretario}{34}{subsubsection.5.3.1.5}% 
-\contentsline {subsubsection}{\numberline {5.3.1.6}Observador}{35}{subsubsection.5.3.1.6}% 
-\contentsline {subsection}{\numberline {5.3.2}Etapas de Revisi\IeC {\'o}n}{35}{subsection.5.3.2}% 
-\contentsline {subsubsection}{\numberline {5.3.2.1}Planificaci\IeC {\'o}n}{35}{subsubsection.5.3.2.1}% 
-\contentsline {paragraph}{Objetivo\\}{35}{paragraph*.25}% 
-\contentsline {paragraph}{Participantes\\}{35}{paragraph*.26}% 
-\contentsline {paragraph}{Criterios de entrada}{35}{paragraph*.27}% 
-\contentsline {paragraph}{Actividades}{35}{paragraph*.28}% 
-\contentsline {paragraph}{Criterios de salida\\}{35}{paragraph*.29}% 
-\contentsline {subsubsection}{\numberline {5.3.2.2}Orientaci\IeC {\'o}n (opcional)}{35}{subsubsection.5.3.2.2}% 
-\contentsline {paragraph}{Objetivo\\}{35}{paragraph*.30}% 
-\contentsline {paragraph}{Participantes\\}{35}{paragraph*.31}% 
-\contentsline {paragraph}{Criterios de entrada\\}{36}{paragraph*.32}% 
-\contentsline {paragraph}{Actividades}{36}{paragraph*.33}% 
-\contentsline {paragraph}{Criterios de salida}{36}{paragraph*.34}% 
-\contentsline {subsubsection}{\numberline {5.3.2.3}Preparaci\IeC {\'o}n}{36}{subsubsection.5.3.2.3}% 
-\contentsline {paragraph}{Objetivo\\}{36}{paragraph*.35}% 
-\contentsline {paragraph}{Participantes\\}{36}{paragraph*.36}% 
-\contentsline {paragraph}{Criterios de entrada\\}{36}{paragraph*.37}% 
-\contentsline {paragraph}{Actividades}{36}{paragraph*.38}% 
-\contentsline {paragraph}{Criterios de salida}{36}{paragraph*.39}% 
-\contentsline {subsubsection}{\numberline {5.3.2.4}Inspecci\IeC {\'o}n}{37}{subsubsection.5.3.2.4}% 
-\contentsline {paragraph}{Objetivo\\}{37}{paragraph*.40}% 
-\contentsline {paragraph}{Participantes\\}{37}{paragraph*.41}% 
-\contentsline {paragraph}{Criterios de entrada\\}{37}{paragraph*.42}% 
-\contentsline {paragraph}{Actividades}{37}{paragraph*.43}% 
-\contentsline {paragraph}{Criterios de salida}{37}{paragraph*.44}% 
-\contentsline {subsubsection}{\numberline {5.3.2.5}Rework}{37}{subsubsection.5.3.2.5}% 
-\contentsline {paragraph}{Objetivo\\}{37}{paragraph*.45}% 
-\contentsline {paragraph}{Participantes\\}{37}{paragraph*.46}% 
-\contentsline {paragraph}{Criterios de entrada\\}{37}{paragraph*.47}% 
-\contentsline {paragraph}{Actividades}{38}{paragraph*.48}% 
-\contentsline {paragraph}{Criterios de salida\\}{38}{paragraph*.49}% 
-\contentsline {subsubsection}{\numberline {5.3.2.6}Seguimiento}{38}{subsubsection.5.3.2.6}% 
-\contentsline {paragraph}{Objetivo\\}{38}{paragraph*.50}% 
-\contentsline {paragraph}{Participantes\\}{38}{paragraph*.51}% 
-\contentsline {paragraph}{Criterios de entrada\\}{38}{paragraph*.52}% 
-\contentsline {paragraph}{Actividades}{38}{paragraph*.53}% 
-\contentsline {paragraph}{Criterios de salida}{38}{paragraph*.54}% 
-\contentsline {subsection}{\numberline {5.3.3}Informe de revisi\IeC {\'o}n}{38}{subsection.5.3.3}% 
-\contentsline {section}{\numberline {5.4}Auditorias}{38}{section.5.4}% 
-\contentsline {subsection}{\numberline {5.4.1}Roles y responsabilidades}{39}{subsection.5.4.1}% 
-\contentsline {subsubsection}{\numberline {5.4.1.1}Iniciador}{39}{subsubsection.5.4.1.1}% 
-\contentsline {subsubsection}{\numberline {5.4.1.2}Moderador (L\IeC {\'\i }der del equipo auditor)}{39}{subsubsection.5.4.1.2}% 
-\contentsline {subsubsection}{\numberline {5.4.1.3}Auditores}{39}{subsubsection.5.4.1.3}% 
-\contentsline {subsubsection}{\numberline {5.4.1.4}Instituci\IeC {\'o}n auditada}{39}{subsubsection.5.4.1.4}% 
-\contentsline {subsubsection}{\numberline {5.4.1.5}Secretario}{39}{subsubsection.5.4.1.5}% 
-\contentsline {subsubsection}{\numberline {5.4.1.6}Nivel de gesti\IeC {\'o}n}{39}{subsubsection.5.4.1.6}% 
-\contentsline {subsection}{\numberline {5.4.2}Etapas de la auditoria}{40}{subsection.5.4.2}% 
-\contentsline {subsubsection}{\numberline {5.4.2.1}Planificaci\IeC {\'o}n}{40}{subsubsection.5.4.2.1}% 
-\contentsline {paragraph}{Objetivo\\}{40}{paragraph*.55}% 
-\contentsline {paragraph}{Participantes\\}{40}{paragraph*.56}% 
-\contentsline {paragraph}{Criterios de entrada}{40}{paragraph*.57}% 
-\contentsline {paragraph}{Actividades}{40}{paragraph*.58}% 
-\contentsline {paragraph}{Criterios de salida}{40}{paragraph*.59}% 
-\contentsline {subsubsection}{\numberline {5.4.2.2}Reuni\IeC {\'o}n de Orientaci\IeC {\'o}n}{40}{subsubsection.5.4.2.2}% 
-\contentsline {paragraph}{Objetivo\\}{40}{paragraph*.60}% 
-\contentsline {paragraph}{Participantes\\}{40}{paragraph*.61}% 
-\contentsline {paragraph}{Criterios de entrada\\}{40}{paragraph*.62}% 
-\contentsline {paragraph}{Actividades}{41}{paragraph*.63}% 
-\contentsline {paragraph}{Criterios de salida}{41}{paragraph*.64}% 
-\contentsline {subsubsection}{\numberline {5.4.2.3}Evaluaci\IeC {\'o}n}{41}{subsubsection.5.4.2.3}% 
-\contentsline {paragraph}{Site visit}{41}{paragraph*.65}% 
-\contentsline {subparagraph}{Objetivo\\}{41}{subparagraph*.66}% 
-\contentsline {subparagraph}{Participantes\\}{41}{subparagraph*.67}% 
-\contentsline {subparagraph}{Criterios de entrada\\}{41}{subparagraph*.68}% 
-\contentsline {subparagraph}{Actividades\\}{41}{subparagraph*.69}% 
-\contentsline {subparagraph}{Criterios de salida\\}{42}{subparagraph*.70}% 
-\contentsline {paragraph}{Reuni\IeC {\'o}n de cierre}{42}{paragraph*.71}% 
-\contentsline {subparagraph}{Objetivo\\}{42}{subparagraph*.72}% 
-\contentsline {subparagraph}{Participantes\\}{42}{subparagraph*.73}% 
-\contentsline {subparagraph}{Criterios de entrada}{42}{subparagraph*.74}% 
-\contentsline {subparagraph}{Actividades}{42}{subparagraph*.75}% 
-\contentsline {subparagraph}{Criterios de salida}{42}{subparagraph*.76}% 
-\contentsline {paragraph}{Informe de Resultados}{42}{paragraph*.77}% 
-\contentsline {subparagraph}{Objetivo\\}{42}{subparagraph*.78}% 
-\contentsline {subparagraph}{Participantes\\}{42}{subparagraph*.79}% 
-\contentsline {subparagraph}{Criterios de entrada\\}{42}{subparagraph*.80}% 
-\contentsline {subparagraph}{Actividades}{43}{subparagraph*.81}% 
-\contentsline {subparagraph}{Criterios de salida\\}{43}{subparagraph*.82}% 
-\contentsline {subsubsection}{\numberline {5.4.2.4}Seguimiento}{43}{subsubsection.5.4.2.4}% 
-\contentsline {paragraph}{Objetivo\\}{43}{paragraph*.83}% 
-\contentsline {paragraph}{Participantes\\}{43}{paragraph*.84}% 
-\contentsline {paragraph}{Criterios de entrada\\}{43}{paragraph*.85}% 
-\contentsline {paragraph}{Actividades}{43}{paragraph*.86}% 
-\contentsline {paragraph}{Criterios de salida\\}{43}{paragraph*.87}% 
-\contentsline {subsection}{\numberline {5.4.3}Informe de Auditoria}{43}{subsection.5.4.3}% 
-\contentsline {section}{\numberline {5.5}Checklist}{43}{section.5.5}% 
-\contentsline {chapter}{\numberline {6}Pruebas}{45}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}Estructura de las pruebas}{45}{section.6.1}% 
-\contentsline {subsection}{\numberline {6.1.1}Planificaci\IeC {\'o}n}{45}{subsection.6.1.1}% 
-\contentsline {subsection}{\numberline {6.1.2}Especificaci\IeC {\'o}n}{45}{subsection.6.1.2}% 
-\contentsline {subsection}{\numberline {6.1.3}Ejecuci\IeC {\'o}n}{46}{subsection.6.1.3}% 
-\contentsline {subsection}{\numberline {6.1.4}An\IeC {\'a}lisis de resultados}{46}{subsection.6.1.4}% 
-\contentsline {subsection}{\numberline {6.1.5}Completaci\IeC {\'o}n}{46}{subsection.6.1.5}% 
-\contentsline {section}{\numberline {6.2}Pruebas sobre el sistema \textit {Gerprin}}{46}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}Pruebas unitarias}{47}{subsection.6.2.1}% 
-\contentsline {subsubsection}{\numberline {6.2.1.1}Herramientas}{47}{subsubsection.6.2.1.1}% 
-\contentsline {subsubsection}{\numberline {6.2.1.2}Documentaci\IeC {\'o}n}{47}{subsubsection.6.2.1.2}% 
-\contentsline {subsubsection}{\numberline {6.2.1.3}Ejemplo de prueba}{47}{subsubsection.6.2.1.3}% 
-\contentsline {subsection}{\numberline {6.2.2}Pruebas de integraci\IeC {\'o}n}{50}{subsection.6.2.2}% 
-\contentsline {subsubsection}{\numberline {6.2.2.1}Herramientas}{51}{subsubsection.6.2.2.1}% 
-\contentsline {subsubsection}{\numberline {6.2.2.2}Documentaci\IeC {\'o}n}{51}{subsubsection.6.2.2.2}% 
-\contentsline {subsubsection}{\numberline {6.2.2.3}Ejemplo de prueba}{51}{subsubsection.6.2.2.3}% 
-\contentsline {subsection}{\numberline {6.2.3}Pruebas de sistema}{52}{subsection.6.2.3}% 
-\contentsline {subsubsection}{\numberline {6.2.3.1}Documentaci\IeC {\'o}n}{52}{subsubsection.6.2.3.1}% 
-\contentsline {subsubsection}{\numberline {6.2.3.2}Ejemplo de prueba}{52}{subsubsection.6.2.3.2}% 
-\contentsline {subsection}{\numberline {6.2.4}Pruebas de aceptaci\IeC {\'o}n}{53}{subsection.6.2.4}% 
-\contentsline {subsubsection}{\numberline {6.2.4.1}Documentaci\IeC {\'o}n}{53}{subsubsection.6.2.4.1}% 
-\contentsline {subsubsection}{\numberline {6.2.4.2}Ejemplo de prueba}{54}{subsubsection.6.2.4.2}% 
-\contentsline {chapter}{\numberline {7}Conclusiones }{55}{chapter.7}% 
-\contentsline {chapter}{\numberline {A}Anexos}{57}{appendix.Alph1}% 
-\contentsline {section}{\numberline {A.1}Informe de revisi\IeC {\'o}n}{57}{section.Alph1.1}% 
-\contentsline {section}{\numberline {A.2}Informe de Auditoria}{58}{section.Alph1.2}% 
-\contentsline {section}{\numberline {A.3}Checklist}{62}{section.Alph1.3}% 
-\contentsline {subsection}{\numberline {A.3.1}Checklist por actividades del proceso de desarrollo evaluados por QA}{62}{subsection.Alph1.3.1}% 
-\contentsline {subsection}{\numberline {A.3.2}Checklist por actividades del proceso de desarrollo evaluados por QA}{65}{subsection.Alph1.3.2}% 
-\contentsline {section}{\numberline {A.4}Checklist del Equipo de Revisi\IeC {\'o}n}{73}{section.Alph1.4}% 
-\contentsline {section}{\numberline {A.5}Checklist del Equipo de Auditoria}{78}{section.Alph1.5}% 
-\contentsline {section}{\numberline {A.6}Plantillas de pruebas}{83}{section.Alph1.6}% 
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Resumen del proyecto}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Prop\IeC {\'o}sito}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Alcance}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}Requisitos no funcionales}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Definici\IeC {\'o}n de atributos de calidad}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Objetivos Cuantificables}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Fiabilidad}{4}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Objetivos cuantificables}{4}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.2}Criterios de medici\IeC {\'o}n.}{4}{subsubsection.2.2.1.2}
+\contentsline {subsection}{\numberline {2.2.2}Usabilidad}{5}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Objetivos cuantificables}{6}{subsubsection.2.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Criterios de Validaci\IeC {\'o}n}{6}{subsubsection.2.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Adaptabilidad}{6}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Objetivos cuantificables}{8}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Criterios de Validaci\IeC {\'o}n}{8}{subsubsection.2.2.3.2}
+\contentsline {subsection}{\numberline {2.2.4}Temporizaci\IeC {\'o}n}{8}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Objetivos cuantificables}{8}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Criterios de Validaci\IeC {\'o}n}{8}{subsubsection.2.2.4.2}
+\contentsline {subsection}{\numberline {2.2.5}Soportar alta carga}{8}{subsection.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.5.1}Objetivos cuantificables}{9}{subsubsection.2.2.5.1}
+\contentsline {subsubsection}{\numberline {2.2.5.2}Criterios de Validaci\IeC {\'o}n}{9}{subsubsection.2.2.5.2}
+\contentsline {subsection}{\numberline {2.2.6}Disponibilidad}{9}{subsection.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.6.1}Cl\IeC {\'u}ster de servidores}{9}{subsubsection.2.2.6.1}
+\contentsline {subsubsection}{\numberline {2.2.6.2}Objetivos cuantificables}{10}{subsubsection.2.2.6.2}
+\contentsline {subsubsection}{\numberline {2.2.6.3}Criterios de Validaci\IeC {\'o}n}{10}{subsubsection.2.2.6.3}
+\contentsline {subsection}{\numberline {2.2.7}Seguridad}{10}{subsection.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.7.1}Limitar puntos de acceso al servidor}{10}{subsubsection.2.2.7.1}
+\contentsline {subsubsection}{\numberline {2.2.7.2}Objetivos cuantificables}{10}{subsubsection.2.2.7.2}
+\contentsline {subsubsection}{\numberline {2.2.7.3}Criterios de Validaci\IeC {\'o}n}{11}{subsubsection.2.2.7.3}
+\contentsline {subsection}{\numberline {2.2.8}Escalabilidad}{11}{subsection.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.8.1}Objetivos cuantificables}{11}{subsubsection.2.2.8.1}
+\contentsline {subsubsection}{\numberline {2.2.8.2}Criterios de Validaci\IeC {\'o}n}{11}{subsubsection.2.2.8.2}
+\contentsline {paragraph}{Encapsulamiento de los m\IeC {\'o}dulos\\}{11}{paragraph*.16}
+\contentsline {paragraph}{Escalabilidad vertical y horizontal\\}{11}{paragraph*.17}
+\contentsline {subsection}{\numberline {2.2.9}Mantenibilidad}{12}{subsection.2.2.9}
+\contentsline {subsubsection}{\numberline {2.2.9.1}Objetivos cuantificables}{12}{subsubsection.2.2.9.1}
+\contentsline {subsubsection}{\numberline {2.2.9.2}Criterios de Validaci\IeC {\'o}n}{12}{subsubsection.2.2.9.2}
+\contentsline {paragraph}{Comentarios en el c\IeC {\'o}digo fuente\\}{12}{paragraph*.18}
+\contentsline {paragraph}{Estandarizaci\IeC {\'o}n del nombre\\}{12}{paragraph*.19}
+\contentsline {chapter}{\numberline {3}Modelo de desarrollo}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Elecci\IeC {\'o}n del modelo}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Definici\IeC {\'o}n de actividades}{14}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Exploraci\IeC {\'o}n}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Planificaci\IeC {\'o}n de las entregas}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Iteraciones}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Integraci\IeC {\'o}n y pruebas}{15}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Aceptaci\IeC {\'o}n y entrega}{16}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Muerte del proyecto}{16}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Productos de Trabajo}{16}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Especificaci\IeC {\'o}n de Requerimientos}{16}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Planificaci\IeC {\'o}n de proyecto}{17}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Plan de pruebas}{18}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Especificaci\IeC {\'o}n del Sistema}{19}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}Plan de Aseguramiento de Calidad (\textit {SQA})}{19}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Manual de usuario}{20}{subsection.3.3.6}
+\contentsline {section}{\numberline {3.4}Hitos del desarrollo (Atributos de Calidad)}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Por actividades}{21}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Por producto}{22}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Puntos de revisi\IeC {\'o}n}{22}{section.3.5}
+\contentsline {chapter}{\numberline {4}Gesti\IeC {\'o}n de calidad}{24}{chapter.4}
+\contentsline {section}{\numberline {4.1}Equipo de trabajo}{24}{section.4.1}
+\contentsline {section}{\numberline {4.2}Recursos}{25}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Personal}{25}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Gerente T\IeC {\'e}cnico}{25}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Unidad \textit {SQA}}{25}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Unidad \textit {SCM}}{25}{subsubsection.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4.2.1.4}Jefe de Proyecto}{25}{subsubsection.4.2.1.4}
+\contentsline {subsubsection}{\numberline {4.2.1.5}Desarrolladores \textit {Front-End}, Desarrolladores \textit {Back-End} y Soporte y mantenimiento}{26}{subsubsection.4.2.1.5}
+\contentsline {subsection}{\numberline {4.2.2}Infraestructura}{26}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Oficina}{26}{subsubsection.4.2.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Equipamiento de trabajo}{27}{subsubsection.4.2.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Actividades}{27}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Evaluaci\IeC {\'o}n de la selecci\IeC {\'o}n de los productos de trabajo}{27}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Evaluaci\IeC {\'o}n de las herramientas}{27}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}Evaluaci\IeC {\'o}n de la planificaci\IeC {\'o}n y el monitoreo del proyecto}{27}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}Evaluaci\IeC {\'o}n de la especificaci\IeC {\'o}n de requerimientos}{28}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}Evaluaci\IeC {\'o}n del dise\IeC {\~n}o}{28}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}Evaluaci\IeC {\'o}n de la implementaci\IeC {\'o}n y de la prueba de unidad}{28}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}Evaluaci\IeC {\'o}n de la integraci\IeC {\'o}n y prueba}{28}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}Evaluaci\IeC {\'o}n del producto antes de su liberaci\IeC {\'o}n}{29}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}Evaluaci\IeC {\'o}n del proceso de revisi\IeC {\'o}n}{29}{subsubsection.4.2.3.9}
+\contentsline {subsubsection}{\numberline {4.2.3.10}Evaluaci\IeC {\'o}n de las acciones correctivas}{29}{subsubsection.4.2.3.10}
+\contentsline {subsubsection}{\numberline {4.2.3.11}Evaluaci\IeC {\'o}n del proceso de \textit {SCM}}{29}{subsubsection.4.2.3.11}
+\contentsline {subsubsection}{\numberline {4.2.3.12}Verificar la implementaci\IeC {\'o}n de los procesos}{29}{subsubsection.4.2.3.12}
+\contentsline {subsubsection}{\numberline {4.2.3.13}Establecer las auditor\IeC {\'\i }as}{29}{subsubsection.4.2.3.13}
+\contentsline {subsubsection}{\numberline {4.2.3.14}Responsabilidades}{29}{subsubsection.4.2.3.14}
+\contentsline {chapter}{\numberline {5}Herramientas, t\IeC {\'e}cnicas y metodolog\IeC {\'\i }as}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}T\IeC {\'e}cnicas}{31}{section.5.1}
+\contentsline {section}{\numberline {5.2}Herramientas}{31}{section.5.2}
+\contentsline {section}{\numberline {5.3}Revisiones}{32}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Roles y responsabilidades}{32}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Moderador}{32}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Autor}{32}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.3}Presentador}{32}{subsubsection.5.3.1.3}
+\contentsline {subsubsection}{\numberline {5.3.1.4}Inspector}{32}{subsubsection.5.3.1.4}
+\contentsline {subsubsection}{\numberline {5.3.1.5}Secretario}{32}{subsubsection.5.3.1.5}
+\contentsline {subsubsection}{\numberline {5.3.1.6}Observador}{33}{subsubsection.5.3.1.6}
+\contentsline {subsection}{\numberline {5.3.2}Etapas de Revisi\IeC {\'o}n}{33}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Planificaci\IeC {\'o}n}{33}{subsubsection.5.3.2.1}
+\contentsline {paragraph}{Objetivo\\}{33}{paragraph*.25}
+\contentsline {paragraph}{Participantes\\}{33}{paragraph*.26}
+\contentsline {paragraph}{Criterios de entrada}{33}{paragraph*.27}
+\contentsline {paragraph}{Actividades}{33}{paragraph*.28}
+\contentsline {paragraph}{Criterios de salida\\}{33}{paragraph*.29}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Orientaci\IeC {\'o}n (opcional)}{33}{subsubsection.5.3.2.2}
+\contentsline {paragraph}{Objetivo\\}{33}{paragraph*.30}
+\contentsline {paragraph}{Participantes\\}{33}{paragraph*.31}
+\contentsline {paragraph}{Criterios de entrada\\}{34}{paragraph*.32}
+\contentsline {paragraph}{Actividades}{34}{paragraph*.33}
+\contentsline {paragraph}{Criterios de salida}{34}{paragraph*.34}
+\contentsline {subsubsection}{\numberline {5.3.2.3}Preparaci\IeC {\'o}n}{34}{subsubsection.5.3.2.3}
+\contentsline {paragraph}{Objetivo\\}{34}{paragraph*.35}
+\contentsline {paragraph}{Participantes\\}{34}{paragraph*.36}
+\contentsline {paragraph}{Criterios de entrada\\}{34}{paragraph*.37}
+\contentsline {paragraph}{Actividades}{34}{paragraph*.38}
+\contentsline {paragraph}{Criterios de salida}{34}{paragraph*.39}
+\contentsline {subsubsection}{\numberline {5.3.2.4}Inspecci\IeC {\'o}n}{35}{subsubsection.5.3.2.4}
+\contentsline {paragraph}{Objetivo\\}{35}{paragraph*.40}
+\contentsline {paragraph}{Participantes\\}{35}{paragraph*.41}
+\contentsline {paragraph}{Criterios de entrada\\}{35}{paragraph*.42}
+\contentsline {paragraph}{Actividades}{35}{paragraph*.43}
+\contentsline {paragraph}{Criterios de salida}{35}{paragraph*.44}
+\contentsline {subsubsection}{\numberline {5.3.2.5}Rework}{35}{subsubsection.5.3.2.5}
+\contentsline {paragraph}{Objetivo\\}{35}{paragraph*.45}
+\contentsline {paragraph}{Participantes\\}{35}{paragraph*.46}
+\contentsline {paragraph}{Criterios de entrada\\}{35}{paragraph*.47}
+\contentsline {paragraph}{Actividades}{36}{paragraph*.48}
+\contentsline {paragraph}{Criterios de salida\\}{36}{paragraph*.49}
+\contentsline {subsubsection}{\numberline {5.3.2.6}Seguimiento}{36}{subsubsection.5.3.2.6}
+\contentsline {paragraph}{Objetivo\\}{36}{paragraph*.50}
+\contentsline {paragraph}{Participantes\\}{36}{paragraph*.51}
+\contentsline {paragraph}{Criterios de entrada\\}{36}{paragraph*.52}
+\contentsline {paragraph}{Actividades}{36}{paragraph*.53}
+\contentsline {paragraph}{Criterios de salida}{36}{paragraph*.54}
+\contentsline {subsection}{\numberline {5.3.3}Informe de revisi\IeC {\'o}n}{36}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Auditorias}{36}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Roles y responsabilidades}{37}{subsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.1.1}Iniciador}{37}{subsubsection.5.4.1.1}
+\contentsline {subsubsection}{\numberline {5.4.1.2}Moderador (L\IeC {\'\i }der del equipo auditor)}{37}{subsubsection.5.4.1.2}
+\contentsline {subsubsection}{\numberline {5.4.1.3}Auditores}{37}{subsubsection.5.4.1.3}
+\contentsline {subsubsection}{\numberline {5.4.1.4}Instituci\IeC {\'o}n auditada}{37}{subsubsection.5.4.1.4}
+\contentsline {subsubsection}{\numberline {5.4.1.5}Secretario}{37}{subsubsection.5.4.1.5}
+\contentsline {subsubsection}{\numberline {5.4.1.6}Nivel de gesti\IeC {\'o}n}{37}{subsubsection.5.4.1.6}
+\contentsline {subsection}{\numberline {5.4.2}Etapas de la auditoria}{38}{subsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.2.1}Planificaci\IeC {\'o}n}{38}{subsubsection.5.4.2.1}
+\contentsline {paragraph}{Objetivo\\}{38}{paragraph*.55}
+\contentsline {paragraph}{Participantes\\}{38}{paragraph*.56}
+\contentsline {paragraph}{Criterios de entrada}{38}{paragraph*.57}
+\contentsline {paragraph}{Actividades}{38}{paragraph*.58}
+\contentsline {paragraph}{Criterios de salida}{38}{paragraph*.59}
+\contentsline {subsubsection}{\numberline {5.4.2.2}Reuni\IeC {\'o}n de Orientaci\IeC {\'o}n}{38}{subsubsection.5.4.2.2}
+\contentsline {paragraph}{Objetivo\\}{38}{paragraph*.60}
+\contentsline {paragraph}{Participantes\\}{38}{paragraph*.61}
+\contentsline {paragraph}{Criterios de entrada\\}{38}{paragraph*.62}
+\contentsline {paragraph}{Actividades}{39}{paragraph*.63}
+\contentsline {paragraph}{Criterios de salida}{39}{paragraph*.64}
+\contentsline {subsubsection}{\numberline {5.4.2.3}Evaluaci\IeC {\'o}n}{39}{subsubsection.5.4.2.3}
+\contentsline {paragraph}{Site visit}{39}{paragraph*.65}
+\contentsline {subparagraph}{Objetivo\\}{39}{subparagraph*.66}
+\contentsline {subparagraph}{Participantes\\}{39}{subparagraph*.67}
+\contentsline {subparagraph}{Criterios de entrada\\}{39}{subparagraph*.68}
+\contentsline {subparagraph}{Actividades\\}{39}{subparagraph*.69}
+\contentsline {subparagraph}{Criterios de salida\\}{40}{subparagraph*.70}
+\contentsline {paragraph}{Reuni\IeC {\'o}n de cierre}{40}{paragraph*.71}
+\contentsline {subparagraph}{Objetivo\\}{40}{subparagraph*.72}
+\contentsline {subparagraph}{Participantes\\}{40}{subparagraph*.73}
+\contentsline {subparagraph}{Criterios de entrada}{40}{subparagraph*.74}
+\contentsline {subparagraph}{Actividades}{40}{subparagraph*.75}
+\contentsline {subparagraph}{Criterios de salida}{40}{subparagraph*.76}
+\contentsline {paragraph}{Informe de Resultados}{40}{paragraph*.77}
+\contentsline {subparagraph}{Objetivo\\}{40}{subparagraph*.78}
+\contentsline {subparagraph}{Participantes\\}{40}{subparagraph*.79}
+\contentsline {subparagraph}{Criterios de entrada\\}{40}{subparagraph*.80}
+\contentsline {subparagraph}{Actividades}{41}{subparagraph*.81}
+\contentsline {subparagraph}{Criterios de salida\\}{41}{subparagraph*.82}
+\contentsline {subsubsection}{\numberline {5.4.2.4}Seguimiento}{41}{subsubsection.5.4.2.4}
+\contentsline {paragraph}{Objetivo\\}{41}{paragraph*.83}
+\contentsline {paragraph}{Participantes\\}{41}{paragraph*.84}
+\contentsline {paragraph}{Criterios de entrada\\}{41}{paragraph*.85}
+\contentsline {paragraph}{Actividades}{41}{paragraph*.86}
+\contentsline {paragraph}{Criterios de salida\\}{41}{paragraph*.87}
+\contentsline {subsection}{\numberline {5.4.3}Informe de Auditoria}{41}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}Checklist}{41}{section.5.5}
+\contentsline {chapter}{\numberline {6}Pruebas}{42}{chapter.6}
+\contentsline {section}{\numberline {6.1}Estructura de las pruebas}{42}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Planificaci\IeC {\'o}n}{42}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Especificaci\IeC {\'o}n}{42}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Ejecuci\IeC {\'o}n}{43}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}An\IeC {\'a}lisis de resultados}{43}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Completaci\IeC {\'o}n}{43}{subsection.6.1.5}
+\contentsline {section}{\numberline {6.2}Pruebas sobre el sistema \textit {Gerprin}}{43}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Pruebas unitarias}{44}{subsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.1.1}Herramientas}{44}{subsubsection.6.2.1.1}
+\contentsline {subsubsection}{\numberline {6.2.1.2}Documentaci\IeC {\'o}n}{44}{subsubsection.6.2.1.2}
+\contentsline {subsubsection}{\numberline {6.2.1.3}Ejemplo de prueba}{44}{subsubsection.6.2.1.3}
+\contentsline {subsection}{\numberline {6.2.2}Pruebas de integraci\IeC {\'o}n}{47}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}Herramientas}{48}{subsubsection.6.2.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2.2}Documentaci\IeC {\'o}n}{48}{subsubsection.6.2.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.3}Ejemplo de prueba}{48}{subsubsection.6.2.2.3}
+\contentsline {subsection}{\numberline {6.2.3}Pruebas de sistema}{49}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}Documentaci\IeC {\'o}n}{49}{subsubsection.6.2.3.1}
+\contentsline {subsubsection}{\numberline {6.2.3.2}Ejemplo de prueba}{49}{subsubsection.6.2.3.2}
+\contentsline {subsection}{\numberline {6.2.4}Pruebas de aceptaci\IeC {\'o}n}{50}{subsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.4.1}Documentaci\IeC {\'o}n}{50}{subsubsection.6.2.4.1}
+\contentsline {subsubsection}{\numberline {6.2.4.2}Ejemplo de prueba}{51}{subsubsection.6.2.4.2}
+\contentsline {chapter}{\numberline {7}Conclusiones }{52}{chapter.7}
+\contentsline {chapter}{\numberline {A}Anexos}{55}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Informe de revisi\IeC {\'o}n}{55}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Informe de Auditoria}{56}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Checklist}{60}{section.Alph1.3}
+\contentsline {subsection}{\numberline {A.3.1}Checklist por actividades del proceso de desarrollo evaluados por QA}{60}{subsection.Alph1.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Checklist por actividades del proceso de desarrollo evaluados por QA}{63}{subsection.Alph1.3.2}
+\contentsline {section}{\numberline {A.4}Checklist del Equipo de Revisi\IeC {\'o}n}{70}{section.Alph1.4}
+\contentsline {section}{\numberline {A.5}Checklist del Equipo de Auditoria}{75}{section.Alph1.5}
+\contentsline {section}{\numberline {A.6}Plantillas de pruebas}{80}{section.Alph1.6}

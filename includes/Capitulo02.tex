@@ -18,7 +18,7 @@ Se debe garantizar la respuesta de la aplicación ante una acción del usuario y
 
 Facilidad en el uso de la aplicación, reflejándose en la rapidez para aprender el funcionamiento del sistema y recordar este aprendizaje.
 
-\item[Adapabilidad:]\hfill
+\item[Adaptabilidad:]\hfill
 
 Capacidad de la aplicación de funcionar en distintos entornos informáticos.
 
@@ -161,7 +161,7 @@ Respecto a la resolución mínima de pantalla, se puede apreciar en el gráfico 
     \end{tabular}
 \end{table}
 
-\subsection{Adapabilidad}
+\subsection{Adaptabilidad}
 
 En vista de la existencia de distintas plataformas móviles, es necesario asegurar un correcto funcionamiento con los sistemas operativos más comunes de estas. A continuación, se puede observar en la gráfica \ref{chart:OS} el detalle en porcentajes del mercado que poseen los sistemas operativos más populares del último año.
 
@@ -183,7 +183,7 @@ En vista de la existencia de distintas plataformas móviles, es necesario asegur
 	\end{bchart}
 \end{figure}
 
-Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \textit{Android} e \textit{iOS}, que en conjunto corresponden al 95,26\% del mercado. Teniendo en cuenta estas cifras y el amplio segmento que abarcan estos dos sistemas, el desarrollo de \textit{Gerprin} se concentrará en dichas plataformas. Para el caso de \textit{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
+Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populares corresponden a \textit{Android} e \textit{iOS}, que en conjunto corresponden al 99,27\% del mercado. Teniendo en cuenta estas cifras y el amplio segmento que abarcan estos dos sistemas, el desarrollo de \textit{Gerprin} se concentrará en dichas plataformas. Para el caso de \textit{Android}, el uso de las distintas versiones se muestra en el grafico \ref{chart:Android Version}.
 
 \begin{figure}[H]
 	\centering
@@ -437,7 +437,7 @@ Lo primero que debe ser tomado en cuenta es la creación del sistema de forma mo
 
 Para este desarrollo, se considera que la aplicación se divide en tres módulos que trabajan juntos, pero su funcionamiento se encuentra encapsulado. El primer módulo es una aplicación móvil desarrollada de forma nativa para \textit{Android} y \textit{iOS}, el segundo módulo es una \textit{API} instalada en un servidor \textit{AWS EC2}. Y finalmente un módulo Arduino a bordo del vehículo. 
 
-\paragraph{Encapsulamiento de los módulos\\}
+\paragraph{Escalabilidad vertical y horizontal\\}
 
 Otro punto importante que tomar en cuenta es la escalabilidad vertical y horizontal de la arquitectura del servidor. La escalabilidad vertical permite aumentar la capacidad física de almacenamiento y procesamiento, aumentando las características del hardware donde se encuentra el sistema. Mientras que la horizontal permite aumentar el número de nodos que conforman el \textit{Cluster} del servidor. Para el caso de \textit{Gerprin}, \textit{AWS EC2} permite la rápida implementación de ambos métodos.
 
