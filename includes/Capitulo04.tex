@@ -5,23 +5,13 @@
 \section{Equipo de trabajo}
 
 A continuación, se presenta un esquema que muestra la estructura del equipo de trabajo basado en \citet{web00}\\ 
-\begin{center}
-	\begin{figure}[ht!]
-		\begin{tikzpicture}[level distance=3cm, sibling distance=3cm,every node/.style={rectangle, draw=black}]
 
-		    \node{Gerente Técnico} [anchor=north]
-		    [edge from parent fork down]
-		    child{node[anchor=east] {Unidad SQA}}
-		    child{node[anchor=south] {Jefe de proyecto}
-		      child {node[anchor=east] {Desarrollo Front-End}}
-		      child {node[anchor=south]{Desarrollo Back-End}}
-		      child {node[anchor=west] {Unidad de soporte y mantenimiento}}}
-		    child {node[anchor=west] {Unidad SCM}};
-		\end{tikzpicture}
-	\caption{Equipo de trabajo}
-	\label{fig:Equipo de trabajo}
-	\end{figure}
-\end{center}
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.7\textwidth]{figures/equipo-trabajo.png}
+\caption{Equipo de trabajo}
+\label{fig:Equipo de trabajo}
+\end{figure}
 
 Según Don Wells, autor de las reglas de \textit{Extreme Programming},  el equipo debe tener dos características transversales:
 
