@@ -4,6 +4,8 @@
 
 Se hace menester comenzar el plan de calidad definiendo los “atributos de calidad”, los indicadores de medición y los valores de validación de estos. Lo anterior, con el fin de definir los márgenes generales en el desarrollo de la aplicación y el nivel de integración del sistema con los atributos antes mencionados.
 
+En la calidad de software se destaca la clasificación del modelo \textit{ISO 9126} que divide en 6 grandes grupos las características que debe tener un software para considerarse que es de “calidad”. En el presente documento se consideraron dichos elementos, sin embargo, en la sección de requisitos no funcionales, se destacó un grupo reducido de indicadores sobre el resto debido a la experiencia en el desarrollo de software similares, donde primaban los atributos de calidad seleccionados por sobre otros. 
+
 \section{Definición de atributos de calidad}
 
 A continuación, se procederá con la presentación y definición de los requisitos no funcionales que definirán el lineamiento del desarrollo de la aplicación.
@@ -56,9 +58,9 @@ En la presente sección se establecerán los indicadores de cada uno de los atri
 
 Es necesario que la información entregada por cualquiera de los distintos módulos que forman \textit{Gerprin} sea legible por los módulos restantes y de este modo no tener perdidas en la comunicación entre distintas plataformas. Las solicitudes y respuesta deben ser verídicas y corresponder a acciones reales desencadenadas por los actores de la aplicación.
 
-Para lo anterior es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
+Para lo anterior, es necesario que el sistema de comunicación que se desarrollará no presente perdidas de información, sin embargo, se deben fijar estándares distintos para cada módulo respecto a la fiabilidad de los datos, debido a que la información que maneja la aplicación tiene distintos grados de importancia, incluso permitiendo perdida parcial de esta en determinadas condiciones.
 
-Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \textit{API} de \textit{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \textit{GPS} envía la posición. Por este motivo el envío de la ubicación se realiza mediante protocolo \textit{UDP}, a diferencia del resto de las funciones del sistema a bordo que deben emplear \textit{TCP}.
+Comenzando con el sistema a bordo, es necesaria la comunicación fiable con la \textit{API} de \textit{Gerprin} al momento de realizar activación o desactivación del cortacorriente mediante la aplicación móvil, pero no lo es para establecer una conexión fiable cada vez que el módulo contenedor del \textit{GPS} envía la posición. Por este motivo, el envío de la ubicación se realiza mediante protocolo \textit{UDP}, a diferencia del resto de las funciones del sistema a bordo que deben emplear \textit{TCP}.
 
 Por otro lado, la aplicación móvil y la \textit{API} desarrollada, deben contar con una conexión fiable de comunicación, esto debido a la información critica que es manejada por estos módulos.
 
@@ -93,13 +95,13 @@ Por otro lado, la aplicación móvil y la \textit{API} desarrollada, deben conta
     \end{tabular}
 \end{table}
 
-Los criterios de validacion se basan en la experiencia de aplicaciones similares. Es necesario considerar una conexión a internet estable que permita el envío y recepción de información.
+Los criterios de validación se basan en la experiencia de aplicaciones similares. Es necesario considerar una conexión a internet estable que permita el envío y recepción de información.
 
 \subsection{Usabilidad}
 
 Es necesario para el módulo de la aplicación móvil del sistema contar con una interfaz que entregue una curva de aprendizaje empinada, es decir, que permita comprender el funcionamiento de la aplicación móvil en un corto periodo de tiempo.
 
-Para esto es necesario que la interfaz aplique colores y símbolos coherentes con las acciones a realizar o información que muestra, Información ordenada y fácil de entender.
+Para esto es necesario que la interfaz aplique colores y símbolos coherentes con las acciones a realizar o información que muestra, información ordenada y fácil de entender.
 
 Dado que el sistema será desarrollado para dispositivos móviles es importante que sea responsivo. Por otro lado, el tamaño de la pantalla del dispositivo, si bien, no es importante en términos de la distribución de los elementos a mostrar, si lo es en términos de usabilidad, es decir, que se muestre adecuadamente los elementos en la pantalla y con un tamaño adecuado. Por este motivo se considera que debe adecuarse a la mayor cantidad de dispositivos.
 
@@ -208,7 +210,7 @@ Como se puede apreciar en el gráfico \ref{chart:OS}, los sistemas más populare
 	\end{bchart}
 \end{figure}
 
-Si bien, corresponde a un segmento importante el uso de \textit{Android KitKat} (10\%) es desde la versión de la \textit{API} de \textit{Android} 21, empleada por google en el desarrollo de \textit{Android Lollipop}, que se integra nativamente \textit{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considerá el desarrollo enfocado en sistemas \textit{Android} 5.0 o mayores.
+Si bien, el uso de \textit{Android KitKat} (10\%) corresponde a un segmento importante, es desde la versión de la \textit{API} de \textit{Android} 21, empleada por google en el desarrollo de \textit{Android Lollipop}, que se integra nativamente \textit{Material Design} que es ampliamente recomendado para el diseño de aplicaciones.  Debido a este motivo, se considera el desarrollo enfocado en sistemas \textit{Android} 5.0 o mayores.
 
 Por otro lado, las versiones de \textit{iOS} y el porcentaje de su participación en el mercado se muestran en el gráfico \ref{chart:iOS Version}.
 
@@ -248,8 +250,8 @@ En base al porcentaje de uso de las distintas versiones de \textit{iOS} del grá
 \subsubsection{Criterios de Validación}
 
 \begin{table}[H]
-    \caption[Validación para los indicadores de adapabilidad.] {Validación para los indicadores de adapabilidad.}
-    \label{tbl:Criterios de Validación Adapabilidad}
+    \caption[Validación para los indicadores de adaptabilidad.] {Validación para los indicadores de adapabilidad.}
+    \label{tbl:Criterios de Validación Adaptabilidad}
     \begin{tabular}{|p{.6\textwidth}|p{.34\textwidth}|}
         \hline
         \textbf{Criterio} &  \textbf{Medición}\\
@@ -265,7 +267,7 @@ En base al porcentaje de uso de las distintas versiones de \textit{iOS} del grá
 
 Se considera la velocidad de conexión del sistema a bordo de 9,6 kbps correspondiente a tecnología \textit{GSM} y una de hasta 2 mbps para una red \textit{3G} para la aplicación móvil, como la velocidad necesaria para un óptimo funcionamiento del sistema.
 
-Debido a que \textit{Gerprin} es una aplicación basada en servicios, es necesario que estos tengan una baja taza de espera al consultar al módulo que contiene la \textit{API}.
+Debido a que \textit{Gerprin} es una aplicación basada en servicios, es necesario que estos tengan una baja tasa de espera al consultar al módulo que contiene la \textit{API}.
 
 \subsubsection{Objetivos cuantificables}
 
@@ -301,7 +303,7 @@ Mediante herramientas como la consola de \textit{Google Play} o \textit{ Google 
 
 Esta información se emplea para calcular el promedio de usuarios conectados y se estima, en base a aplicaciones similares, que cada uno de ellos realizará una consulta al servidor cada 2 segundos.
 
-Es importante considerar que el número de usuarios varia dependiendo de la popularidad de \textit{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
+Es importante considerar que el número de usuarios varía dependiendo de la popularidad de \textit{Gerprin}. Debe ser obtenido inicialmente mediante un estudio de mercado y posteriormente corregida con datos empíricos.
 
 
 \subsubsection{Objetivos cuantificables}
